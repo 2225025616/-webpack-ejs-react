@@ -1,0 +1,278 @@
+
+.system-setting {
+
+  nav {
+    margin: 0 0 60px;
+    display: flex;
+    height: 45px;
+    border-bottom: 1px solid #ddd;
+
+    span {
+      margin-right: 8px;
+      padding: 0 22px;
+      height: 45px;
+      text-align: center;
+      color: #666666;
+      font-size: 16px;
+      line-height: 45px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border: 1px solid #f8f8f8;
+      border-bottom: 1px solid #ddd;
+      background-color: #f8f8f8;
+      cursor: pointer;
+    }
+
+    .cash-coupon {
+      margin-left: 8px;
+    }
+  }
+
+  .showItem {
+    display: block;
+  }
+
+  article {
+    display: none;
+
+    //.name {
+    //  margin-bottom: 32px;
+    //  font-size: 18px;
+    //  font-weight: 700;
+    //}
+
+    section {
+      display: flex;
+      align-items: center;
+      &.showStatus{
+        height: 150px;
+        background: #f2f8ff;
+        margin-bottom: 60px;
+        padding-left: 40px;
+        .resultImage{
+          //width: 100px;
+          //height: 100px;
+          margin-right: 20px;
+        }
+        .resultTip{
+          margin-right: 20px;
+          font-size: 16px;
+        }
+        p.resultBottom{
+          color: #666;
+          font-size: 14px;
+        }
+        a.statusButton{
+          width: 120px;
+          height: 44px;
+          border-radius: 3px;
+          color: #fff;
+          background: #3469ec;
+          text-align: center;
+          line-height: 44px;
+          font-size: 14px;
+        }
+      }
+
+      span {
+        color: #999;
+        font-size: 14px;
+      }
+    }
+
+    .submit {
+      height: 30px;
+      color: #0a6dee;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #90c0ff;
+      background-color: #e5f2fe;
+    }
+
+    button:disabled {
+      color: #999;
+      border-radius: 5px;
+      border: 1px solid #dcdcdc;
+      background-color: #dcdcdc;
+    }
+  }
+
+  .password {
+    //padding-bottom: 20px;
+
+    section {
+      margin: 10px 0;
+
+      span {
+        width: 120px;
+        text-align: right;
+        padding-right: 50px;
+      }
+    }
+
+    .submit {
+      margin: 22px 0 0 120px;
+      width: 150px;
+      color: #0a6dee;
+      border: 1px #90c0ff solid;
+      background: #e5f2fe;
+    }
+  }
+
+  .bind-account {
+    //padding-bottom: 20px;
+
+    section {
+      span {
+        width: 166px;
+        text-align: right;
+        padding-right: 50px;
+      }
+    }
+
+    .mail {
+      align-items: stretch;
+      margin-top: 28px;
+
+      .bind-name {
+        padding-top: 6px;
+      }
+
+      .mail-part {
+        height: 30px;
+      }
+
+      div {
+
+        .sms {
+          display: flex;
+          margin-top: 6px;
+
+          .error-text {
+            max-width: 120px;
+            text-align: left;
+          }
+
+          input {
+            width: 182px !important;
+          }
+
+          button {
+            position: absolute;
+            margin-left: 200px;
+          }
+        }
+
+        p {
+          margin-right: 33px;
+          width:100px;
+        }
+
+        input {
+          width: 230px;
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid #dcdcdc;
+          background-color: #ffffff;
+        }
+
+        .phone-button-group {
+          margin-top: 10px;
+        }
+
+        .button-group {
+          margin-top: 20px;
+        }
+
+        .submit {
+          margin-right: 20px;
+          min-width: 80px;
+        }
+
+        .cancel {
+          height: 30px;
+          color: #666;
+          font-size: 14px;
+          width: 80px;
+          border-radius: 5px;
+          border: 1px solid #dcdcdc;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .notice {
+    //margin-top: 60px;
+
+    span {
+      width: 162px;
+      text-align: right;
+      padding-right: 50px;
+    }
+
+    section {
+      padding-bottom: 32px;
+
+      div {
+        align-items: center;
+        display: flex;
+
+        input {
+          margin-right: 11px;
+        }
+
+        .left {
+          margin-right: 47px;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 90px;
+      }
+    }
+
+    button {
+      margin: 22px 0 0 140px;
+      width: 150px;
+    }
+  }
+
+  .user-information {
+    section {
+      margin: 10px 0;
+
+      span {
+        width: 162px;
+        text-align: right;
+        padding-right: 50px;
+        &.card-word{
+          color: #0a6dee;
+          text-decoration: underline;
+        }
+      }
+
+      .to-user-kyc {
+        margin-top: 12px;
+        text-decoration: underline;
+        color: #fe9e00;
+      }
+    }
+  }
+}
+
+.org-setting-info {
+
+  .org-information {
+    section {
+      margin: 10px 0;
+
+      span {
+        width: 166px;
+        text-align: right;
+        padding-right: 50px;
+      }
+    }
+  }
+
+}

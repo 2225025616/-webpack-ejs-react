@@ -1,0 +1,121 @@
+.order {
+  margin-bottom: 4rem;
+
+  header {
+    height: 7rem;
+    display: flex;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    background: #373d41;
+
+    .left {
+      @extend .flex-row-center;
+
+      .icon {
+        margin: 0 1rem 0 0;
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+
+      .icon-wait {
+        background: url('../images/mobile/icon-wait.png') no-repeat center center;
+        background-size: 100% auto;
+      }
+
+      .icon-paid {
+        background: url('../images/mobile/icon-paid.png') no-repeat center center;
+        background-size: 100% auto;
+      }
+
+      .icon-cancel {
+        background: url('../images/mobile/icon-cancel.png') no-repeat center center;
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  article {
+
+    .cancel-pay {
+      padding: 0 2rem 0;
+      line-height: 8rem;
+      font-size: 1.5rem;
+    }
+
+    .sub-item {
+      @extend .flex-column-center;
+      padding: 0 0 0 1.5rem;
+      margin: 0 0 1.5rem;
+      background: white;
+
+      a, .item {
+        box-sizing: border-box;
+        @extend .flex-space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 1.5rem 0 0;
+        border-bottom: 1px solid $border;
+        font-size: 1.6rem;
+        line-height: 5rem;
+
+        &:last-of-type {
+          border: none;
+        }
+
+        span {
+          color: $black-light;
+        }
+
+        .money {
+          color: $black;
+        }
+
+        .all-money {
+          font-weight: 600;
+          color: #F36570;
+        }
+      }
+    }
+  }
+
+  .code {
+    padding: 1.5rem;
+
+    .tip {
+      font-size: 1.4rem;
+    }
+
+    .input-wrap {
+      position: relative;
+
+      input {
+        box-sizing: border-box;
+        height: 4rem;
+        margin: 1rem 0 0;
+        padding: 0 1rem;
+        border: 1px solid $border;
+      }
+
+      .signature-code {
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 1.1rem;
+        color: #1687ee;
+        border: 1px solid #1687ee;
+        border-radius: 3px;
+        background: transparent;
+
+        &[disable] {
+          border-color: $border;
+          color: $black-lighter;
+        }
+      }
+    }
+  }
+}

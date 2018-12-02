@@ -1,0 +1,39 @@
+.overflow-hide {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.input-active {
+  border: 1px solid #e5e5e5;
+
+  &:hover {
+    border-color: #ccc;
+  }
+}
+
+.column-input {
+  flex-direction: column;
+
+  .error-text {
+    display: none;
+    position: absolute;
+    padding-top: 4px;
+    color: #ea2c2c !important;
+    font-size: 12px;
+  }
+}
+
+.row-input {
+  flex-direction: row;
+
+  i {
+    display: none;
+  }
+
+  .error-text {
+    //display: none;
+    color: #ea2c2c !important;
+    font-size: 12px;
+  }
+}

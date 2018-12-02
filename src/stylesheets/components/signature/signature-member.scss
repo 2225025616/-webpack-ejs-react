@@ -1,0 +1,55 @@
+.signature-member {
+
+  //h2 {
+  //  padding: 28px 0 55px;
+  //  font-size: 24px;
+  //  font-weight: 400;
+  //}
+
+  .float-btn {
+    margin-right: 8px;
+    color: #1d8dfb;
+    line-height: 28px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+  }
+
+  .member-table {
+    margin-top: 27px;
+    width: 100%;
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: #f0f6f6;
+        }
+      }
+    }
+
+    thead tr,
+    tbody tr {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 160px;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    thead tr {
+      font-weight: 700;
+      border-top: 1px solid #eee;
+      background-color: #f2f2f2;
+    }
+
+    thead tr td,
+    tbody tr td {
+      width: 30%;
+
+      &:last-child {
+        text-align: center;
+      }
+    }
+  }
+}

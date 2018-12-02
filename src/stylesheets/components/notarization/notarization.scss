@@ -1,0 +1,300 @@
+//refactor
+.notary-details {
+  section {
+    textarea, .radios, .postcode {
+      margin-left: 60px;
+    }
+
+    //textarea {
+    //  padding: 6px 11px;
+    //  width: 317px;
+    //  height: 76px;
+    //  border-radius: 5px;
+    //  border: 1px solid $border;
+    //  background-color: #ffffff;
+    //}
+
+    //.postcode {
+    //  padding: 6px 11px !important;
+    //  border: 1px solid $border;
+    //  border-radius: 5px;
+    //}
+    //
+    //.postcode::-webkit-input-placeholder { /* WebKit browsers */
+    //  color: #999;
+    //  font-size: 12px;
+    //}
+    //.postcode:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    //  color: #999;
+    //  font-size: 12px;
+    //}
+    //.postcode::-moz-placeholder { /* Mozilla Firefox 19+ */
+    //  color: #999;
+    //  font-size: 12px;
+    //}
+    //.postcode:-ms-input-placeholder { /* Internet Explorer 10+ */
+    //  color: #999;
+    //  font-size: 12px;
+    //}
+
+    .radios {
+      label {
+        padding: 0 45px 0 9px;
+      }
+    }
+  }
+}
+
+//refactor
+
+.notlabel {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #999999;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+//p {
+//  text-align: center;
+//}
+
+.btnyes {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.btnno {
+  margin-left: 75px;
+}
+
+.stepdiv {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  svg {
+    fill: #03a9f4 !important;
+  }
+}
+
+//第一步
+.stepone {
+  box-shadow: 0 -1px 0 #E8E8E8, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(224, 224, 224, 0.24);
+  display: block;
+
+  .infolabel {
+    margin-left: 27px;
+  }
+
+  .selectinfo {
+    height: 48px;
+
+    label {
+      line-height: 48px;
+      margin-left: 27px;
+    }
+
+    .buttons {
+      float: right;
+      margin-top: 6px;
+      margin-right: 27px;
+
+      a {
+        background-color: #03a9f4 !important;
+      }
+    }
+  }
+  .tableborder {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+
+    .tableRow {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+
+      span {
+        position: absolute;
+        padding: 9px 16px 9px 16px;
+        border: 1px solid #ddd;
+        background-color: #03a9f4;
+        color: white;
+        border-radius: 2px;
+      }
+
+      .uploadFile {
+        width: 88px;
+        height: 35px;
+        border: 1px solid #ddd;
+        opacity: 0;
+      }
+
+    }
+  }
+
+  .bottompart {
+    margin-top: 10px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 -1px 0 #E8E8E8, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(224, 224, 224, 0.24);
+
+    .submitinfo {
+      width: 500px;
+      height: 180px;
+      margin-top: 30px;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+
+      label {
+        float: left;
+        margin-right: 70px;
+      }
+
+      //.buttonone {
+      //   position: relative;
+      //   height: 35px;
+      //   margin-left: 167px;
+      //   margin-top: 10px;
+      // }
+      //
+      // .buttontwo {
+      //   margin-top: 10px;
+      //   position: absolute;
+      //   height: 35px;
+      //   margin-left: 120px;
+      //   text-align: center;
+      // }
+
+      p {
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      .btnyes {
+        position: relative;
+        margin-top: 20px;
+      }
+
+    }
+
+  }
+
+}
+
+//第二步
+.steptwo {
+  display: block;
+}
+
+.information {
+  width: 80%;
+  min-width: 744px;
+  height: auto;
+  margin: auto;
+
+  .lefthr {
+    width: 33%;
+    float: left;
+  }
+
+  .labeltype {
+    font: 1.5rem "宋体";
+    float: left;
+    text-align: center;
+    min-width: 240px;
+    margin: auto;
+    width: 33%
+  }
+
+  .righthr {
+    width: 33%;
+    float: right;
+  }
+
+  .readp {
+    color: red;
+    text-align: center;
+    clear: left;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    tr {
+      height: 40px;
+      vertical-align: top;
+      td {
+        padding-left: 30px;
+
+        textarea {
+          margin-bottom: 8px;
+        }
+      }
+
+      .tdtitle {
+        color: #999999;
+        text-align: right;
+      }
+
+      .tdleft {
+        width: 30%;
+        min-width: 250px;
+        text-align: right;
+        color: #333333;
+      }
+
+      .listId {
+        line-height: 20px;
+      }
+
+      .trbtn {
+        vertical-align: center;
+        height: 80px;
+      }
+
+    }
+
+  }
+
+}
+
+//第三步
+.stepthree {
+  height: 500px;
+  text-align: center;
+  display: block;
+
+  img {
+    display: block;
+    margin: 50px auto 0 auto;
+  }
+
+  .psuccess {
+    font: 1.6rem "宋体";
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ptext {
+    font: 1.4rem "宋体";
+    color: #6C6C6C;
+    margin-bottom: 5px;
+  }
+
+  .ptel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: 1.4rem "宋体";
+    color: red;
+  }
+}

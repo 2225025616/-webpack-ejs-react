@@ -1,0 +1,75 @@
+.mall-container {
+
+  .card .subTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .packages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 -1rem;
+
+    .package {
+      box-sizing: border-box;
+      width: calc((100% - 1rem) / 2);
+      padding: 0 1.5rem;
+      margin: 0 1rem 1rem 0;
+      border: 1px solid $border;
+
+      &.no-margin {
+        margin-right: 0;
+      }
+
+      &.selected {
+        border: 1px solid $blue;
+        background: url('../images/success.png') no-repeat center right 1.5rem;
+        background-size: 2rem 2rem;
+      }
+
+      h2 {
+        line-height: 4rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $black-light;
+      }
+
+      .content {
+        font-size: 1.4rem;
+        line-height: 4rem;
+
+        p {
+
+          .red-font {
+            padding: 0 1rem 0 0;
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .price {
+        line-height: 4rem;
+        color: $black-lighter;
+
+        .red-font {
+          padding: 0 .4rem 0 0;
+        }
+      }
+    }
+  }
+
+  .items {
+
+    .time {
+      width: 8rem;
+      height: 4rem;
+      margin: 0 1rem 0 0;
+      font-size: 1.4rem;
+
+      &.selected {
+        border-color: transparent;
+        background: rgba($blue, .25);
+      }
+    }
+  }
+}

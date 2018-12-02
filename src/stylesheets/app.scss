@@ -1,0 +1,164 @@
+/* ==========================================================================
+   定义整站的样式
+ ====== ====================================================================== */
+
+* {
+  max-height: 1000000rem;
+}
+
+// 10 ÷ 16 × 100% = 62.5%
+// 字体使用 rem, 1rem = 10px;
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: #fff !important;
+}
+
+//定义几个基本的颜色，字体。
+$blue: #4285f4;
+$red: #DD5347;
+$white: #fff;
+$mainBgColor: #f2f2f2;
+
+$primary-color: #03a9f4;
+$alert-color: red;
+
+$border: #d2d2d2;
+$border-light: #eee;
+$border-lighter: #f8f8f8;
+$border-dark: #ddd;
+
+$normalBlue: #0a6dee;
+
+// 进度条
+.progress {
+  position: fixed;
+  z-index: 999;
+}
+
+.red-font {
+  color: $red !important;
+}
+
+.blue-font {
+  color: $blue !important;
+}
+
+button[disabled] {
+  border-color: transparent !important;
+  background: #eee !important;
+  color: #666 !important;
+}
+
+.rrt-middle-container {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}//toastr提示框样式
+
+//iconfont
+@import 'iconfont';
+
+@import "common";
+@import 'components/common/404';
+@import "components/common/breadcrumbs";
+@import 'components/common/common';
+@import "components/common/file-type-icon";
+@import "components/common/form";
+@import "components/common/header";
+@import 'components/common/help';
+@import "components/common/modal";
+@import "components/common/new-modal";
+@import "components/common/sidebar"; //for user or organization sidebar;
+@import 'components/common/notification';
+@import "components/common/pagination";
+@import "components/common/tos";
+@import "components/common/user-info";
+@import "components/common/table";
+
+/* ==========================================================================
+   组织相关scss
+ ====== ====================================================================== */
+
+@import "components/attestations/attestations";
+@import "components/attestations/attestations-valid";
+@import "components/attestations/attestations-summary";
+@import "components/attestations/attestations-profile";
+@import "components/attestations/org-attestations-profile";
+@import "components/member/apikey";
+@import "components/member/kyc";
+@import "components/member/member-manage";
+@import "components/member/management";
+@import "components/member/organization-profile";
+@import "components/notarization/base-notary";
+@import "components/notarization/notary-details";
+@import "components/notarization/notarization";
+@import "components/notarization/notary-panel";
+@import "components/product/newProduct.scss";
+@import "components/product/product-template.scss";
+@import "components/product/productList.scss";
+@import "components/product/productInfo";
+@import "components/product/product-overview.scss";
+@import "components/product/productStep";
+@import "components/mall/mall";
+@import "components/common/tos";
+
+/* ==========================================================================
+   user模块scss
+ ====== ====================================================================== */
+
+@import "components/users/user-auth";
+@import "components/users/pay";
+@import "components/users/pay-results";
+@import "components/users/user-profile";
+@import "components/users/user-kyc";
+@import "components/member/organization-kyc";
+@import "components/users/setting";
+@import "components/users/trade-records";
+@import "components/users/hint";
+@import "components/users/order-management";
+
+/* ==========================================================================
+   前台展示部分scss
+ ====== ====================================================================== */
+
+@import "./components/website-show/website-show";
+
+/* ==========================================================================
+   页面部分scss
+ ====== ====================================================================== */
+@import "components/common/404";
+@import "common/components/input-component";
+@import "common/components/textarea-component";
+
+/* ==========================================================================
+   mobile页面scss
+ ====== ====================================================================== */
+
+@import "mobile/attestation";
+@import "components/evidence/evidence";
+
+/* ==========================================================================
+   电子签名模块scss
+ ====== ====================================================================== */
+
+@import "components/signature/signatures";
+@import "components/signature/signature-profile";
+@import "components/signature/signature-info";
+@import "components/signature/signature-new";
+@import "components/signature/signature-member";
+@import "components/signature/signature-official-seal.scss";
+@import "components/signature/signature-detail";
+@import "components/signature/enterprise-sign";
+@import "components/signature/statistics-sign";
+
+/* ==========================================================================
+   common组件scss
+ ====== ====================================================================== */
+
+@import "components/common/view-image";
+@import "components/common/dialog";
+@import "components/common/loading";

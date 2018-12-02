@@ -1,0 +1,45 @@
+.add-org-auth {
+  margin: 15px 28px;
+  width: 80px;
+  height: 35px;
+  float: right;
+}
+
+.add-sign-auth-model {
+
+  section {
+
+    img {
+      max-width: 200px;
+      max-height: 130px;
+    }
+
+    .upload-org-sign-file {
+      margin-left: 20px;
+      width: 82px;
+      height: 32px;
+
+      input {
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        opacity: 0;
+      }
+
+      span {
+        display: inline-block;
+        width: 82px;
+        text-align: center;
+        line-height: 30px;
+        color: #1d8dfb;
+        border-radius: 3px;
+        border: 1px solid #1d8dfb;
+      }
+    }
+  }
+}
+
+.sign-image {
+  height: 40px;
+  max-width: 140px;
+}

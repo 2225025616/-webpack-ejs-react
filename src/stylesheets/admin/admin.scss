@@ -1,0 +1,442 @@
+.contain-admin {
+  display: flex;
+  min-height: 100vh;
+  min-width: 1366px;
+  width: 100%;
+  background-color: #E8E8E8;
+
+  .pagination {
+    width: auto;
+  }
+}
+
+#user-kyc,
+#company-kyc,
+#template-kyc,
+#template-reset,
+#admin-users,
+#notary-users,
+#template-reset,
+#api-request {
+  font-family: "Microsoft YaHei", Arial, "Rhythm Heiti", sans-serif;
+  position: relative;
+  width: calc(100vw - 325px);
+  //min-width: 868px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 24px;
+
+  .title {
+    position: absolute;
+    top: -40px;
+    //margin-bottom: 2px;
+    padding: 8px 20px 8px 0;
+    color: #666;
+
+    .link {
+      color: #333;
+    }
+  }
+
+  .admin-table {
+    width: 100%;
+    padding: 24px;
+    border-collapse:collapse;
+    margin: 30px 0;
+    font-size: 14px;
+
+    thead {
+      color: #333;
+
+      tr {
+        height: 40px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+
+    th, td {
+      text-align: center;
+    }
+
+    tbody {
+      color: #333;
+      border-bottom: 1px solid #e8e8e8;
+
+      tr {
+        height: 50px;
+        border-bottom: 1px solid #eee;
+
+        &:hover {
+          background-color: #fbfbfb;
+        }
+      }
+
+      button, a {
+        padding: 0 6px;
+        font-size: 14px;
+        color: #1890ff;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        line-height: 28px;
+        height: 28px;
+
+        &:hover {
+          color: #40a9ff;
+        }
+      }
+    }
+  }
+
+  .table-page {
+    padding: 0 0 35px;
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .sum {
+      color: rgba(0,0,0,.65);
+      font-size: 14px;
+      margin-right: 8px;
+    }
+
+    .total-items {
+      font-weight: bolder;
+    }
+
+    select {
+      padding: 0 20px;
+      height: 25px;
+    }
+
+    .page-unit {
+      padding-left: 4px;
+      color: rgba(0,0,0,.65);
+      font-size: 14px;
+    }
+  }
+}
+
+#admin-users,
+#notary-users {
+  form {
+
+    input {
+      padding: 0 10px;
+      margin: 5px 0;
+      height: 30px;
+      width: 100%;
+      line-height: 30px;
+      outline: none;
+      border: 1px solid #ccc;
+    }
+
+    .add-btn {
+      margin-top: 20px;
+      padding: 5px 15px;
+      width: 100%;
+      border-radius: 1px;
+      color: #fff;
+      background-color: #3d81f0;
+    }
+  }
+
+}
+
+#api-request,
+#template-reset {
+  .search-api,
+  .web-management,
+  .search-template {
+    margin: 10px 0;
+    height: 35px;
+    // border-bottom: 3px solid #e8e8e8;
+
+    label {
+      padding-right: 16px;
+    }
+
+    input {
+      margin-right: 10px;
+      padding: 0 10px;
+      width: 400px;
+      line-height: 28px;
+      outline: none;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      background-color: #fff;
+
+      &:hover {
+        border-color: #ccc;
+      }
+    }
+
+    button {
+      width: 128px;
+      height: 32px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      border-radius: 3px;
+      border: none;
+      background-color: #1d8dfb;
+    }
+  }
+
+  .form-control {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 400px;
+    line-height: 29px;
+    border-radius: 0;
+    border: 1px solid #ddd;
+  }
+
+  .btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    width: 400px;
+    height: 34px;
+    margin: 0 0 0 170px;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 0;
+    background-color: #F1C40F;
+  }
+
+  .payload {
+    padding: 24px;
+  }
+}
+
+#template-reset {
+  .show-template {
+
+    .template-title {
+      border-bottom: 1px solid #999;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      height: 36px;
+      line-height: 36px;
+      font-size: 16px;
+
+      span {
+        flex: 1;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        a {
+          color: #333;
+        }
+
+        .reset-btn {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+.admin-kyc-form {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    section {
+      display: flex;
+
+      span {
+        color: #666;
+      }
+
+      .item {
+        margin: 0 0 0 10px;
+        color: #333;
+      }
+    }
+  }
+
+  .id-card {
+    p {
+      color: #666;
+    }
+
+    .img-groups {
+      display: inline-block;
+
+      a {
+        float: left;
+      }
+
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+      }
+
+      .back {
+        float: right;
+      }
+
+      .first-img {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .reason {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    clear: left;
+
+    p {
+      color: #666;
+    }
+
+    input {
+      margin-left: 10px;
+      width: 400px;
+    }
+  }
+
+  .button-group {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0 20px;
+    }
+
+    .apply {
+
+    }
+
+    .reject {
+      background-color: #fff;
+      color: #666;
+      border: 1px solid #999;
+    }
+  }
+}
+
+.org-kyc-form {
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+
+    section {
+      height: 50px;
+      line-height: 50px;
+      color: #666;
+
+      .item {
+        color: #333;
+      }
+    }
+  }
+
+  .img-group {
+    display: flex;
+    justify-content: center;
+
+    .licence {
+      margin-right: 150px;
+    }
+
+    section {
+      p {
+        color: #666;
+      }
+
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+      }
+    }
+  }
+
+
+  .reason {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #666;
+    }
+
+    input {
+      margin-left: 10px;
+      width: 400px;
+    }
+  }
+
+  .button-group {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0 20px;
+    }
+
+    .apply {
+
+    }
+
+    .reject {
+      background-color: #fff;
+      color: #666;
+      border: 1px solid #999;
+    }
+  }
+}
+
+.admin-org-modal {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.admin-table-search-bar {
+
+  .search-bar {
+
+    input {
+      width: 300px;
+      height: 35px;
+      border: 1px solid #e5e5e5;
+      background-color: #ffffff;
+      outline: none;
+    }
+
+    button {
+      margin-left: 10px;
+      width: 80px;
+      height: 35px;
+    }
+  }
+}
+
+.admin-login-phone {
+  margin-bottom: 24px !important;
+}

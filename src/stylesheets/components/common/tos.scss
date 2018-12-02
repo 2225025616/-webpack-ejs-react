@@ -1,0 +1,64 @@
+.baoquan-tos {
+  margin: 100px auto 0 !important;
+  border: 1px solid #ddd;
+  padding: 0 0 55px;
+  border-radius: 2px;
+
+  .tos-title {
+    margin-bottom: 55px;
+    background: #fafafa;
+    text-align: center;
+    h2 {
+      margin: 0 auto;
+      border-bottom: 1px solid #4285f4;
+      width: 280px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+
+  h5 {
+    margin-top: 20px;
+    padding: 0 55px;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  p {
+    text-align: justify;
+    padding: 0 55px;
+    font-family: "Rhythm Heiti", sans-serif, "Helvetica Neue", Helvetica, Arial;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .container-wrapper {
+    margin-top: -80px;
+
+    .container {
+      width: 100%;
+      background-color: inherit;
+      box-shadow: none;
+      padding: 0 10px 30px 10px;
+    }
+
+    .baoquan-tos {
+      border: none;
+
+      .tos-title {
+        background-color: inherit;
+      }
+
+      h5 {
+        padding: 0 10px;
+      }
+      p {
+        padding: 0 10px;
+      }
+    }
+
+  }
+}

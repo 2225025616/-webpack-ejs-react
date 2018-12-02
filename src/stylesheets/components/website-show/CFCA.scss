@@ -1,0 +1,99 @@
+.what-why {
+  @extend .flex-column-center;
+
+  .content {
+    @extend .flex-space-between;
+    width: 1180px;
+
+    aside {
+      width: 730px;
+      margin-bottom: 50px;
+
+      h2 {
+        position: relative;
+        font-size: 18px;
+        color: $black-dark;
+        text-indent: 15px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 4px;
+          height: 18px;
+          margin-top: -9px;
+          background-color: $blue;
+        }
+
+        &:last-of-type {
+          margin: 40px 0 0;
+        }
+      }
+
+      p {
+        margin: 20px 0 0;
+        font-size: 16px;
+        line-height: 26px;
+        color: $black;
+      }
+    }
+  }
+}
+
+.cfca-advantages {
+  @extend .flex-column-center;
+  background-color: $white;
+
+  .advantages-container {
+    @extend .flex-space-between;
+    flex-wrap: wrap;
+    width: 1180px;
+    padding-bottom: 30px;
+
+    .advantage {
+      @extend .flex-row-center;
+      justify-content: flex-start;
+      width: 360px;
+      margin-bottom: 20px;
+
+      .text {
+        h2 {
+          margin: 0 0 15px;
+          font-size: 18px;
+          color: $black-dark;
+        }
+
+        p {
+          font-size: 14px;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.cfca-applications {
+  @extend .flex-column-center;
+
+  .scenes {
+    @extend .flex-space-between;
+    flex-wrap: wrap;
+    width: 1180px;
+    padding-bottom: 50px;
+
+    .scene {
+      @extend .flex-column-center;
+      width: 390px;
+      height: 200px;
+      margin-bottom: 2px;
+      background: no-repeat center center;
+
+      h2 {
+        margin-top: 30px;
+        font-size: 18px;
+        color: $white;
+      }
+    }
+  }
+}

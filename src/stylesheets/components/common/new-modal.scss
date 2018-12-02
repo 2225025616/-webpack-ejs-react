@@ -1,0 +1,326 @@
+$blue: #0a6dee;
+.narcissus_17w311v {
+  padding: 0 !important;
+  min-width: 300px;
+  border-radius: 0 !important;
+
+  a {
+    left: calc(100% - 42px) !important;
+    top: 2px;
+
+    circle {
+      fill: #fff;
+    }
+
+    rect {
+      fill: black
+    }
+  }
+
+  .button-group,
+  .modal-content,
+  .delete-template .content {
+
+    button {
+      min-width: 128px;
+      height: 30px;
+      padding: 0 15px;
+      font-size: 14px;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .yes {
+      color: #ffffff;
+      background-color: #0a6dee;
+      border: none;
+
+      &:hover {
+        background-color: #005bcb;
+      }
+
+      &:active {
+        background-color: #005bcb;
+      }
+    }
+
+    .no {
+      margin-left: 27px;
+      color: #1d8dfb;
+      border: 1px solid #1d8dfb;
+      background-color: #fff;
+
+      &:hover {
+        color: #fff;
+        background-color: #0070e9;
+      }
+
+      &:active {
+        background-color: #0070e9;
+      }
+    }
+  }
+
+  h1 {
+    padding-left: 42px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 46px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  .confirm {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+  }
+
+  article {
+    margin: 49px auto 0;
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+
+      span {
+        width: 30%;
+        margin: 0 20px 0 0;
+        font-size: 16px;
+        text-align: right;
+      }
+
+      button.signature-code {
+        border: 1px solid $blue;
+        color: $blue;
+        background: transparent;
+      }
+
+      .warn {
+        color: #ff473b;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      input, textarea {
+        width: 284px;
+        border: 1px solid #dcdcdc;
+        border-radius: 0 !important;
+        background-color: #fff;
+        outline: none;
+      }
+
+      input {
+        padding: 0 10px;
+        width: 284px;
+        height: 34px;
+      }
+
+      textarea {
+        padding: 4px 10px;
+      }
+
+      textarea::-webkit-input-placeholder { /* WebKit browsers */
+        color: #999;
+        font-size: 14px;
+      }
+      textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #999;
+        font-size: 14px;
+      }
+      textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #999;
+        font-size: 14px;
+      }
+      textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #999;
+        font-size: 14px;
+      }
+
+      input::-webkit-input-placeholder { /* WebKit browsers */
+        color: #999;
+        font-size: 14px;
+      }
+      input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #999;
+        font-size: 14px;
+      }
+      input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #999;
+        font-size: 14px;
+      }
+      input:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #999;
+        font-size: 14px;
+      }
+
+      select {
+        padding-left: 10px;
+        width: 284px;
+        height: 34px;
+        border: 1px solid #dcdcdc;
+        background-color: #fff;
+        outline: none;
+      }
+    }
+
+    .button-group {
+      margin-bottom: 60px;
+    }
+  }
+
+  .template-modal {
+    a{
+      left: calc(100% - 42px)!important;
+      top: 2px;
+    }
+    h2 {
+      margin: 0px;
+      padding: 24px 32px 20px;
+      color: #333;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+      border-bottom: none;
+    }
+
+    .template-tip {
+      padding: 0 32px 10px;
+      color: #f52f3e;
+
+      span {
+        color: rgb(10, 109, 238);
+      }
+    }
+
+    .templates {
+      display: flex;
+      padding: 0 24px 20px;
+
+      .modal-container {
+        position: relative;
+        margin: 8px;
+        width: 145px;
+        height: 200px;
+        text-align: center;
+        background: #fff url("../images/template.png") no-repeat !important;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.156863);
+        }
+
+        .title {
+          color: #03a9f4;
+          text-align: center;
+          padding: 20px 4px;
+        }
+
+        .comment {
+          padding: 8px 8px 0;
+          word-wrap: break-word;
+          word-break: break-all;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .delete-template {
+    width: 500px;
+
+    .content {
+      padding: 30px 42px 20px;
+      text-align: center;
+
+      p {
+        padding-bottom: 20px;
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .create-seal-form {
+    padding: 30px 40px;
+  }
+
+  .create-seal {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    cursor: auto;
+
+    p {
+      color: #666;
+    }
+
+    img {
+      margin-right: 30px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .upload-seal {
+      position: relative;
+      margin: 25px 0 15px;
+      cursor: pointer;
+
+      span {
+        height: 36px;
+        width: 124px;
+        display: block;
+        line-height: 36px;
+        color: #fff;
+        text-align: center;
+        background-color: #1d8dfb;
+      }
+
+      input[type="file"] {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        height: 35px;
+        width: 124px;
+        font-size: 0;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .seal-remark {
+    display: flex;
+    margin: 30px 0;
+
+    span {
+      margin-right: 15px;
+      line-height: 30px;
+    }
+
+    input {
+      width: 208px;
+      padding: 0 8px;
+      height: 30px;
+      border: 1px solid #e5e5e5;
+      background-color: #ffffff;
+    }
+
+    .error-text {
+      min-width: 173px !important;
+    }
+  }
+
+  .modal-content {
+    padding: 30px 60px 60px;
+  }
+}

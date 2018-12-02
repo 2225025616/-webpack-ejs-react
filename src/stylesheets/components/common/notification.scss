@@ -1,0 +1,128 @@
+.notification-container {
+  //
+  //.title {
+  //  padding: 26px 0 32px;
+  //  font-size: 2.4rem;
+  //  font-weight: bold;
+  //  color: #000;
+  //}
+
+  .notify-tabs {
+    display: flex;
+
+    hr {
+      width: 1px;
+      height: 34px;
+      margin: 0 18px;
+      border: none;
+      border-right: 1px dotted #cbcbcb;
+    }
+
+    button {
+      line-height: 32px;
+      margin-right: 5px;
+      padding: 0 22px;
+      border: 1px solid #dcdcdc;
+      background-color: #f2f2f2;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .button-group {
+      button {
+        margin: 0;
+        border-right: 0;
+        background-color: #fff;
+
+        &:last-child {
+          border-right: 1px solid #dcdcdc;
+        }
+      }
+
+      .active {
+        color: #0a6dee;
+        border: solid 1px #6ca8f5;
+        background-color: #dbecfd;
+        border-right: 1px solid #6ca8f5 !important;
+      }
+    }
+  }
+
+  .notification-table {
+    margin-top: 22px;
+    margin-bottom: 80px;
+    width: 100%;
+    line-height: 40px;
+
+    table {
+      width: 100%;
+
+      thead {
+        background-color: #f2f2f2;
+
+        tr {
+          font-weight: bold;
+        }
+      }
+    }
+
+    tr {
+      font-size: 1.4rem;
+      border: 1px solid;
+      border-color: #d2d2d2 transparent;
+      color: #000;
+
+      &:hover {
+        background-color: #f0f6f6;
+      }
+
+      td {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+
+        &:first-child {
+          text-align: center;
+        }
+      }
+
+      .checkbox {
+        width: 5%;
+      }
+
+      .info {
+        padding-right: 10px;
+        width: 40%;
+      }
+
+      .date {
+        width: 20%;
+      }
+
+      .type {
+        width: 15%;
+      }
+
+      .subtype {
+        width: 20%;
+      }
+    }
+
+    .isRead {
+      color: #999;
+    }
+  }
+
+  .all-page {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      width: 200px;
+    }
+  }
+}

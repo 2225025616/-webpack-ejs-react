@@ -1,0 +1,31 @@
+
+.pay-result {
+  width: 800px;
+  height: 500px;
+
+  h2 {
+    color: #999;
+  }
+
+  .pay-item {
+    padding-top: 50px;
+    font-size: 1.6rem;
+
+    p {
+      text-align: left;
+      margin-left: 80px;
+      display: flex;
+      line-height: 60px;
+
+      span {
+        line-height: 60px;
+        width: 150px;
+        text-align: right;
+        margin-right: 30px;
+
+      }
+    }
+
+  }
+
+}

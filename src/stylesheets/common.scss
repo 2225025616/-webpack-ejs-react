@@ -1,0 +1,57 @@
+@import "common/basic/normalize";
+@import "common/basic/rhythm/rhythm";
+@import "common/basic/icon";
+@import "common/mixins/utilities";
+@import "common/mixins/layout";
+@import "common/mixins/skins";
+@import "common/mixins/components/button";
+@import "common/mixins/components/form";
+@import "common/components/button";
+@import "common/components/form";
+@import "common/components/carousel";
+
+.content-height {
+  width: 100%;
+  min-width: 1366px;
+  position: relative;
+  margin: 0 auto;
+  background: #f8f8f8;
+
+}
+
+.main-content {
+  display: flex;
+  padding: 38px 60px;
+ /* padding: 38px 60px 41px;*/
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  max-width: 1920px;
+  min-width: 1366px;
+  position: relative;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1600px) {
+    padding: 38px;
+  }
+}
+
+.children-main-content {
+  display: flex;
+  padding: 0;
+  max-width: 1920px;
+  min-width: 1366px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.delete-name {
+  color: #dd5347;
+  line-height: 2.5em;
+  text-align: left;
+}
+
+.overflow-hide {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

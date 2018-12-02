@@ -1,0 +1,19 @@
+.file-type-icon {
+  position: relative;
+  margin: 3px 40px;
+  height: 64px;
+  width: 64px;
+  display: block;
+  background: url("../images/components/common/file-type-icon.png") no-repeat;
+
+  .text {
+    position: absolute;
+    top: 29px;
+    color: #fff;
+    background-color: #03a9f4;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 1.6rem;
+    width: 41px;
+  }
+}

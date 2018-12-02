@@ -1,0 +1,82 @@
+.pay-modal-common {
+  h2 {
+    padding: 1rem 0 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $black-lighter;
+  }
+
+  .sub-items {
+    @extend .flex-column-center;
+    padding: 0 0 0 1.5rem;
+    background: white;
+
+    .item {
+      position: relative;
+      box-sizing: border-box;
+      @extend .flex-space-between;
+      width: 100%;
+      padding: 0 1.5rem 0 0;
+      border-bottom: 1px solid $border;
+      font-size: 1.6rem;
+      line-height: 5rem;
+
+      &:last-of-type {
+        border: none;
+      }
+
+      &[disabled] {
+
+        .text {
+          h3 {
+            color: $black-lighter;
+          }
+        }
+
+        .pay-type {
+          display: none;
+        }
+      }
+
+      .pay-logo {
+        display: block;
+        width: 2.2rem;
+      }
+
+      .text {
+        width: calc(100vw - 3rem - 2.2rem - 1.5rem);
+
+        h3 {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .tips {
+          margin: 0.4rem 0 0;
+          font-size: 1.3rem;
+          line-height: normal;
+          color: $black-lighter;
+        }
+      }
+
+      .pay-type {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        box-sizing: border-box;
+        width: 2rem;
+        height: 2rem;
+        margin: -1rem 0 0;
+        border-radius: 50%;
+        border: 1px solid $border;
+
+        &.selected {
+          border: none;
+          background: url('../images/success.png') no-repeat center center;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

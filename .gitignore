@@ -1,0 +1,10 @@
+/.idea
+# /dist
+# /dist/*
+/node_modules
+*.swp
+env.js
+npm-debug.log*
+*.DS_Store
+*-manifest.json
+package-lock.json

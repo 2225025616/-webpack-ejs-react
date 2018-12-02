@@ -1,0 +1,126 @@
+@import "./mixin";
+@import "./color";
+
+input {
+  @include placeholder-color($text-placeholder);
+}
+
+//表单样式
+.form-block {
+  border-top: 1px solid $bd-form;
+  border-bottom: 1px solid $bd-form;
+  background: $bg-white;
+  .form-item {
+    position: relative;
+    display: block;
+    margin-left: px2rem(38);
+    cursor: pointer;
+    &.border-full {
+      margin-left: 0;
+      padding-left: px2rem(38);
+    }
+    border-bottom: 1px solid $bd-form;
+    @include font-dpr(28px);
+    &:last-child {
+      border: none;
+    }
+
+    label {
+      display: inline-block;
+      height: px2rem(96);
+      line-height: px2rem(96);
+      min-width: px2rem(184);
+      font-weight: normal;
+      color: $text-normal;
+      abbr {
+        color: $text-fail;
+        border: none;
+      }
+    }
+
+    .input-like {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    .input-like, input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input[type="url"], input[type="number"] {
+      box-sizing: border-box;
+      padding-right: px2rem(10);
+      border: none;
+      width: px2rem(458);
+      height: px2rem(96);
+      line-height: px2rem(96);
+      color: $text-input;
+      background: none;
+      -webkit-appearance: none;
+    }
+
+    select {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      border: none;
+      height: px2rem(96);
+      width: 96%;
+      color: $text-fade;
+      @include font-dpr(28px);
+      -webkit-appearance: none;
+      background: url(/mui/icon/select-down.png) no-repeat right center;
+      background-size: px2rem(24) px2rem(13);
+    }
+
+    label + select {
+      width: px2rem(494);
+    }
+
+    select[dir="rtl"] {
+      padding-right: px2rem(40);
+    }
+
+    > i {
+      float: right;
+      margin-top: px2rem(36);
+      margin-right: px2rem(36);
+      @include single-transition(transform, 0.2s);
+    }
+
+    .btn-valid {
+      position: absolute;
+      right: px2rem(36);
+      top: px2rem(18);
+    }
+
+    .v-error, .error {
+      color: $text-valid-fail;
+      position: absolute;
+      right: px2rem(36);
+      top: 0;
+      //height:px2rem(96);
+      line-height: px2rem(96);
+      pointer-events: none;
+    }
+  }
+
+  &.align-right {
+    input, .input-like {
+      text-align: right;
+    }
+  }
+
+  .field_with_errors {
+    input {
+      @include placeholder-color(transparent);
+    }
+  }
+}
+
+//rewrite disabled input color for weChart on Android
+//body.micro-messenger.android,body.iphone {
+//  input[type="text"],input[type="tel"],input[type="password"],input[type="email"] {
+//    &:disabled {
+//      -webkit-appearance: none;
+//      color: #333;
+//    }
+//  }
+//}

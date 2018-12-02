@@ -1,0 +1,33 @@
+
+.textarea-component {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  textarea {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid $border;
+    background-color: #ffffff;
+  }
+
+  .error-content {
+    flex-direction: row;
+    position: inherit;
+    margin-left: 0 !important;
+    left: 30px;
+    display: none;
+    color: #ea2c2c !important;
+    min-width: 200px;
+
+    .font-error {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    .error-text {
+      font-size: 12px;
+      color: #ea2c2c !important;
+    }
+  }
+}

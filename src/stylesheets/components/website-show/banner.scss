@@ -1,0 +1,342 @@
+.banner {
+  position: relative;
+  height: 500px;
+  background: $blue5 no-repeat center bottom;
+
+  .middle-btn {
+    @extend .flex-row-center;
+    position: absolute;
+    left: 50%;
+    bottom: 115px;
+    width: 166px;
+    height: 40px;
+    margin: 0 0 0 -84px;
+    border-radius: 20px;
+    border: 1px solid $white;
+    font-size: 16px;
+    color: $white;
+
+    .btn-white {
+      @extend .flex-row-center;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      color: inherit;
+    }
+  }
+
+  .btn-left {
+    position: absolute;
+    left: 50%;
+    bottom: 130px;
+    margin: 0 0 0 (-$width/2);
+    border-radius: 0;
+  }
+
+  nav {
+    @extend .row;
+    position: absolute;
+    left: 50%;
+    bottom: 130px;
+    width: 300px;
+    margin: 0 0 0 (-$width/2);
+
+    .a-solution-wrap {
+      width: 130px;
+      height: 40px;
+      margin: 0 20px 0 0;
+      border-radius: 3px;
+      border: 1px solid $white;
+      color: $white;
+    }
+
+    .btn-solution-white {
+      @extend .flex-row-center;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      color: inherit;
+    }
+
+    .a {
+      @extend .flex-row-center;
+      width: 130px;
+      height: 40px;
+      margin: 0 20px 0 0;
+      border-radius: 3px;
+      border: 1px solid $white;
+      font-size: 16px;
+      color: $white;
+    }
+
+    .btn-yellow {
+      background-color: #ff9600;
+      border-color: #ff9600;
+
+      &:hover {
+        background-color: #ff7900;
+      }
+    }
+
+    .btn-white {
+      color: $blue;
+      background-color: $white;
+      border-color: $white;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+
+    .btn-blue {
+      background-color: $blue;
+      border-color: $blue;
+
+      &:hover {
+        background-color: $blue5;
+      }
+    }
+  }
+
+  .animation {
+    position: absolute;
+    right: 50%;
+    bottom: 60px;
+    width: 830px;
+    height: 350px;
+    margin: 0 (-$width / 2 - 55px) 0 0;
+    background: url('../images/website-show/others/pic-animation-bg.png') no-repeat center center;
+
+    .animation-light {
+      position: absolute;
+      left: 405px;
+      top: 113px;
+      width: 110px;
+      height: 187px;
+      margin: -187px 0 0 -55px;
+      background: url('../images/website-show/others/pic-animation-light.png') no-repeat center center;
+      animation: light 3s infinite ease;
+    }
+
+    .animation-logo {
+      position: absolute;
+      left: 405px;
+      top: 113px;
+      width: 85px;
+      height: 42px;
+      margin: -120px 0 0 -42px;
+      background: url('../images/website-show/others/pic-animation-logo.png') no-repeat center center;
+      animation: logo 3s infinite ease;
+    }
+
+    .animation-circle {
+      $size: 300px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: $size;
+      height: $size;
+      margin: (-$size/2) 0 0 (-$size/2);
+      border-radius: 50%;
+      border: 2px solid #5173c8;
+      background: url('../images/website-show/others/pic-animation-circle.png') no-repeat center center;
+    }
+
+    .position-1 {
+      left: 142px;
+      top: 215px;
+      animation: circle1 3s infinite linear;
+    }
+
+    .position-2 {
+      left: 210px;
+      top: 55px;
+      animation: circle2 3s infinite linear;
+    }
+
+    .position-3 {
+      left: 610px;
+      top: 14px;
+      animation: circle3 3s infinite linear;
+    }
+
+    .position-4 {
+      left: 708px;
+      top: 179px;
+      animation: circle4 3s infinite linear;
+    }
+
+    @keyframes light {
+      0% {
+        opacity: .3
+      }
+      50% {
+        opacity: 1
+      }
+      100% {
+        opacity: .3
+      }
+    }
+
+    @keyframes logo {
+      0% {
+        top: 113px;
+      }
+      50% {
+        top: 90px;
+      }
+      100% {
+        top: 113px;
+      }
+    }
+
+    @keyframes circle1 {
+      0% {
+        transform: scale(.38) rotate(0)
+      }
+      100% {
+        transform: scale(.38) rotate(360deg)
+      }
+    }
+
+    @keyframes circle2 {
+      0% {
+        transform: scale(.43) rotate(0)
+      }
+      100% {
+        transform: scale(.43) rotate(360deg)
+      }
+    }
+
+    @keyframes circle3 {
+      0% {
+        transform: scale(.45) rotate(0)
+      }
+      100% {
+        transform: scale(.45) rotate(360deg)
+      }
+    }
+
+    @keyframes circle4 {
+      0% {
+        transform: scale(.4) rotate(0)
+      }
+      100% {
+        transform: scale(.4) rotate(360deg)
+      }
+    }
+  }
+}
+
+.banner-wrap {
+  position: relative;
+  height: 500px;
+
+  .banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+  }
+
+  .block-statistics {
+    @extend .row;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 -84px (-$width/2);
+    width: $width;
+    height: 124px;
+    background: url('../images/website-show/home/bg-statistics.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    box-shadow: 0 6px 13px 2px rgba($blue3, .16);
+
+    .items {
+      @extend .flex-row-center;
+      position: relative;
+      width: $width/3;
+
+      &:not(:last-child):before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 40px;
+        margin: -20px 0 0;
+        background-color: $blue1;
+      }
+
+      .icon {
+        padding: 0 30px 0 0;
+        font-size: 48px;
+        color: $blue;
+      }
+
+      aside {
+        @extend .column;
+
+        span {
+          font-size: 24px;
+          color: $blue;
+        }
+
+        h2 {
+          margin: 8px 0 0;
+          font-size: 14px;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .banner-nav {
+    @extend .flex-row-center;
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    width: 500px;
+    height: 1px;
+    margin: 0 0 0 -250px;
+
+    .nav-btn {
+      width: 24px;
+      height: 4px;
+      margin: 0 10px 0 0;
+      background-color: rgba($white, .5);
+      cursor: pointer;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+
+    .selected {
+      background-color: $white;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

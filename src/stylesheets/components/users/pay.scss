@@ -1,0 +1,123 @@
+.pay {
+
+  p.id {
+    margin: 0 0 18px;
+  }
+
+  .info-wrap {
+    margin-left: -18px;
+    padding: 0 18px 18px;
+    border: 1px solid #eee;
+
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      line-height: 64px;
+
+      img {
+        margin: 0 18px 0 0;
+      }
+    }
+
+    .info {
+      padding: 18px 0 0 18px;
+
+      .item {
+        line-height: 36px;
+
+        .name {
+          display: inline-block;
+          width: 100px;
+          color: #666;
+          text-align: right;
+        }
+
+        .value {
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    height: 34px;
+
+    .name {
+      width: 90px;
+      color: #666666;
+    }
+
+    .balance {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .unit {
+      padding-left: 10px;
+      font-weight: 700;
+    }
+
+    .balance-tip {
+      padding: 0 10px;
+    }
+
+    input {
+      width: 191px;
+      height: 34px;
+      border: 1px solid #dcdcdc;
+      background-color: #ffffff;
+      outline: none;
+    }
+
+    .pay-type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 18px;
+      width: 122px;
+      height: 37px;
+      border: 1px solid #eee;
+      background-color: #ffffff;
+      cursor: pointer;
+
+      &.active {
+        border: none;
+        background: url('../images/active.png') no-repeat center center;
+        background-size: 100% 100%;
+      }
+
+      &[disabled] {
+        border: none !important;
+        background: #eee !important;
+        cursor: not-allowed !important;
+      }
+    }
+
+    .ali-pay {
+      background: url("../images/ali-pay.png") no-repeat center center;
+    }
+
+    .we-chat-pay {
+      background: url("../images/we-chat-pay.png") no-repeat center center;
+    }
+
+    .union-pay {
+      background: url("../images/union-pay.png") no-repeat center center;
+    }
+
+    .error-text {
+      min-width: 190px !important;
+    }
+  }
+
+  .blueButton {
+    margin-left: 90px;
+    width: 190px;
+    height: 34px;
+  }
+}

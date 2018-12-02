@@ -1,0 +1,107 @@
+.order-management {
+
+  header {
+    display: flex;
+    //padding-top: 34px;
+
+    //p {
+    //  color: #333333;
+    //  font-size: 24px;
+    //}
+
+    select {
+      margin-left: 26px;
+      color: #666;
+      font-size: 16px;
+      border: none;
+      background: #fff;
+    }
+  }
+
+  nav {
+    margin: 37px 0 24px;
+    display: flex;
+    height: 45px;
+    border-bottom: 1px solid #d2d2d2;
+
+    span {
+      padding: 0 22px;
+      //width: 110px;
+      height: 45px;
+      text-align: center;
+      color: #333333;
+      font-size: 16px;
+      line-height: 45px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border: 1px solid #d2d2d2;
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    .cash-coupon {
+      margin-left: 8px;
+    }
+  }
+
+  article {
+
+    .no-operates {
+      display: block;
+      line-height: 50px;
+    }
+
+    .table-search-bar {
+      .exchange {
+        display: flex;
+        align-items: center;
+
+        button {
+          margin-right: 25px;
+          width: 134px;
+          height: 34px;
+          color: #ffffff;
+          border-radius: 15px;
+          background-color: #1d8dfb;
+        }
+
+        p {
+          display: flex;
+          color: #666;
+
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .common-table-list {
+      td,th {
+        padding-left: 40px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        td,th {
+          padding-left: 15px;
+        }
+      }
+
+      .invoice-status {
+        text-align: center;
+      }
+    }
+
+  }
+
+}
+
+.buttons {
+  margin-bottom: 19px !important;
+}
+
+.invoice-tip {
+  display: block;
+  margin: 0 0 43px 225px;
+  color: #999999;
+}

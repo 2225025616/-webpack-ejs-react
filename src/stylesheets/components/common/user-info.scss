@@ -1,0 +1,117 @@
+.user-info {
+  height: 170px;
+  margin-bottom: 16px;
+
+  .avatar {
+    width: 86px;
+    height: 110px;
+    float: left;
+
+    .user-image {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      margin: 0px 8px 16px 8px;
+    }
+
+    a {
+      display: inline;
+      position: relative;
+
+      div {
+        display: none;
+      }
+
+      span {
+        display: none;
+      }
+
+      input {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        margin-top: -86px;
+        position: relative;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        background: black;
+        opacity: 0;
+      }
+
+      &:hover div {
+        position: absolute;
+        top: 0px;
+        left: 8px;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        display: block;
+        cursor: pointer;
+        background: #000;
+        opacity: 0.5;
+        border: 2px solid #0e80e5;
+      }
+      &:hover input {
+        display: block;
+      }
+
+      &:hover span {
+        height: 70px;
+        color: #fff;
+        text-align: center;
+        display: block;
+        line-height: 70px;
+      }
+    }
+
+    .certificate {
+      margin-top: 20px;
+      width: 100%;
+      height: 20px;
+
+      abbr {
+        margin: 0 4px;
+      }
+    }
+  }
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    text-align: center;
+    width: 130px;
+    height: 100px;
+    margin: 10px auto 0;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .coupon {
+      text-align: left;
+
+      img {
+        margin-bottom: 1px;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .account {
+    .balance {
+      clear: both;
+      display: block;
+      margin-top: 140px;
+      position: absolute;
+      font-size: 1.2em;
+      color: #333333;
+    }
+  }
+}

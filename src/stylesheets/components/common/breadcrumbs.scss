@@ -1,0 +1,25 @@
+.breadcrumb {
+  font-size: 1.6rem;
+  color: #999;
+  margin: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+
+  li {
+    display: inline-block;
+    line-height: 1.6em;
+
+    &::before {
+      content: ">";
+      padding: 0 4px;
+    }
+
+    &:first-child::before {
+      content: "";
+      padding: 0;
+    }
+  }
+  a {
+    line-height: normal;
+  }
+}

@@ -1,0 +1,25 @@
+@import 'iconfont';
+@import 'admin/admin.scss';
+@import "components/common/pagination";
+@import "components/users/user-auth";
+@import "./admin/admin-modal.scss";
+@import "./admin/admin-common.scss";
+@import "./admin/web-management.scss";
+@import "./admin/kyc.scss";
+@import "./admin/data-count.scss";
+@import "./admin/org-sign-auth.scss";
+@import "./admin/package.scss";
+@import "./admin/dashboard.scss";
+@import "./admin/common.scss";
+
+/*
+重置一些属性
+*/
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

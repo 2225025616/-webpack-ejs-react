@@ -1,0 +1,308 @@
+.help-search {
+  @extend .flex-row-center;
+  width: 100%;
+  height: 200px;
+  margin: 80px 0 0;
+  background: #ecedef url('../images/website-show/help-document/bg-help.jpg') repeat-x center center;
+
+  .help-search-container {
+    @extend .flex-space-between;
+    width: $width;
+    margin: auto;
+
+    h1 {
+      font-size: 48px;
+      color: $black-dark;
+    }
+
+    .search-wrap {
+      @extend .row;
+
+      input {
+        width: 600px;
+        height: 50px;
+        padding: 0 15px;
+        margin: 0;
+        border: 1px solid $blue;
+        border-right: 0;
+        font-size: 16px;
+        color: $black;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #aaa;
+        font-size: 16px;
+      }
+      :-moz-placeholder {
+        color: #aaa;
+        font-size: 16px;
+      }
+      ::-moz-placeholder {
+        color: #aaa;
+        font-size: 16px;
+      }
+      :-ms-input-placeholder {
+        color: #aaa;
+        font-size: 16px;
+      }
+
+      button {
+        width: 112px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: #fff;
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.help-content {
+  @extend .row;
+  align-items: stretch;
+  width: $width;
+  margin: auto;
+
+  .help-menu {
+    width: 240px;
+    min-width: 240px;
+    padding: 15px 0;
+    border-right: 1px solid $border;
+
+    h1 {
+      border-bottom: 1px solid $border-light;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 56px;
+      color: $black-dark;
+    }
+
+    .menu {
+      padding: 16px 0;
+      list-style: none;
+      border-bottom: 1px solid $border-light;
+
+      a {
+        @extend .flex-space-between;
+        padding: 0 20px 0 0;
+        font-size: 18px;
+        line-height: 30px;
+        color: $black;
+
+        .iconfont {
+          font-size: 18px;
+        }
+
+        .rotate {
+          transform: rotate(-90deg);
+        }
+      }
+
+      .submenu {
+        margin: 0 0 0 18px;
+        font-size: 14px;
+        line-height: 38px;
+        color: $black-light;
+        cursor: pointer;
+        list-style: circle;
+
+        &:first-of-type {
+          margin-top: 10px;
+        }
+
+        &:hover {
+          color: $blue1;
+        }
+      }
+
+      .selected {
+        color: $blue !important;
+      }
+    }
+  }
+
+  .help-text {
+    flex: 1;
+    max-width: 940px;
+    padding: 0 0 60px 35px;
+
+    header {
+      margin: 30px 0 0;
+      font-size: 14px;
+      color: $black-light;
+
+      .arrow {
+        font-size: inherit;
+        padding: 0 10px;
+      }
+
+      .dark {
+        font-size: inherit;
+        color: $black-dark;
+      }
+    }
+
+    section {
+      margin: 80px 0 0;
+
+      &:first-of-type {
+        margin: 50px 0 0;
+      }
+
+      h1 {
+        font-size: 18px;
+        color: $black-dark;
+      }
+
+      h2 {
+        margin: 40px 0 5px;
+        font-size: 16px;
+        color: $black-dark;
+      }
+
+      h3 {
+        margin: 20px 0 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: $black-dark;
+      }
+
+      h4 {
+        margin: 30px 0 0;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      p {
+        margin: 20px 0 0;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black;
+        text-align: justify;
+
+        a {
+          color: $blue;
+        }
+      }
+
+      .tips {
+        margin: 10px 0 0;
+        color: $black-light;
+      }
+    }
+
+    .brief {
+    }
+
+    .help-item-advantages {
+
+      .advantage {
+
+        &:first-of-type {
+          padding: 15px 0 0;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+      }
+    }
+
+    .help-item-prices {
+
+      .prices-table {
+
+        .sign-price-tip {
+          margin-top: 10px;
+          color: #333;
+          font-weight: 600;
+        }
+
+        table {
+          margin: 20px 0 0;
+          width: 100%;
+          border-collapse: collapse;
+          border-left: 1px solid $border;
+          border-top: 1px solid $border;
+
+          td, th {
+            max-width: 435px;
+            padding: 0 30px;
+            border-right: 1px solid $border;
+            border-bottom: 1px solid $border;
+            font-size: 14px;
+            text-align: center;
+            color: $black;
+          }
+
+          th {
+            height: 44px;
+            font-weight: 600;
+          }
+
+          td {
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    .user-guide {
+
+      .map {
+        padding: 50px 0 40px;
+        width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .help-faqs {
+
+      .faqs-type {
+
+      }
+
+      .QA {
+
+        &:first-of-type {
+          padding: 10px 0 0;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+
+  .access-guide {
+    p {
+      color: #000000 !important;
+    }
+
+    .title {
+      margin: 0 0 20px !important;
+      font-size: 18px;
+    }
+
+    .description {
+      font-size: 14px;
+      margin: 0 !important;
+
+      .link {
+
+      }
+    }
+
+    img {
+      margin-top: 20px;
+      width: 906px;
+    }
+
+  }
+}

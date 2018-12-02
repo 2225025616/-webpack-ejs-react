@@ -1,0 +1,204 @@
+.signature-info {
+  //padding-top: 28px;
+
+  button {
+    border: none;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    height: 23px;
+
+    .back {
+      margin-left: 5px;
+      color: #0a6dee;
+      font-size: 16px;
+      cursor: pointer;
+
+      //&:before {
+      //  content: "<";
+      //  margin-right: 4px;
+      //  font-size: 17px;
+      //  font-weight: 700;
+      //  cursor: pointer;
+      //}
+    }
+
+    h1 {
+      margin-left: 16px;
+      padding-left: 16px;
+      color: #333333;
+      font-size: 24px;
+      border-left: 1px solid #333;
+
+      .balance {
+        padding: 0 0 0 10px;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .btn {
+        width: 80px;
+        height: 24px;
+        margin: 0 0 0 10px;
+        border-radius: 2px;
+        border: 1px solid $blue;
+        font-size: 12px;
+        line-height: 22px;
+        color: $blue;
+      }
+    }
+  }
+
+  .signature-form {
+
+    .signatory {
+      //margin-top: 55px;
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          color: #1d8dfb;
+          font-size: 16px;
+          font-weight: 700;
+          background-color: #fff;
+        }
+      }
+
+      .members {
+        margin-top: 27px;
+        width: 100%;
+        font-size: 14px;
+
+        thead {
+          tr {
+            text-align: left;
+            height: 40px;
+            background-color: #f2f2f2;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+
+            th {
+              padding-left: 80px;
+              border: none !important;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            height: 50px;
+            border-bottom: 1px solid #eee;
+
+            td {
+              padding-left: 80px;
+              border: none !important;
+
+              input {
+                width: 160px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid #bfbfbf;
+                background-color: #ffffff;
+                outline: none;
+              }
+            }
+          }
+        }
+
+        .operate {
+          padding-left: 0;
+          text-align: center;
+
+          span {
+            @extend .word;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+
+    .sign-detail {
+      margin-top: 120px;
+
+      h2 {
+        margin-bottom: 50px;
+        color: #333333;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      section {
+        display: flex;
+        padding-bottom: 30px;
+
+        span {
+          width: 122px;
+        }
+
+        .clear-date {
+          @extend .word;
+          width: 60px;
+          text-align: center;
+          line-height: 40px;
+        }
+
+        .end-date-tip {
+          padding-left: 10px;
+          width: 250px;
+          line-height: 40px;
+          color: #666;
+        }
+
+        .SingleDatePicker {
+
+          .SingleDatePickerInput {
+            display: flex;
+            align-items: center;
+            height: 45px;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+          }
+
+          .DateInput {
+            padding: 0;
+            width: 338px;
+            color: #333333;
+            font-size: 14px;
+            line-height: normal;
+            background: none;
+
+            .DateInput__display-text--focused {
+              background: none;
+              border-color: #fff;
+              color: #333;
+            }
+          }
+        }
+
+        textarea {
+          padding: 6px 10px;
+          width: 432px;
+          height: 110px;
+          border-radius: 5px;
+          border: 1px solid #dcdcdc;
+        }
+      }
+
+      .submit {
+        margin: 0 0 30px 122px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.contact-name {
+  width: 130px !important;
+}

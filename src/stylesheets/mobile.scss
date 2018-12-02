@@ -1,0 +1,400 @@
+/* ==========================================================================
+   定义整站的样式
+ ====== ====================================================================== */
+
+//定义几个基本的颜色，字体。
+$blue: #1687ee;
+$red: #DD5347;
+$white: #fff;
+$black: #333;
+$black-light: #666;
+$black-lighter: #999;
+$orange: #ff9f00;
+$border: #eee;
+
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 100000rem; //forbidden font boosting
+}
+
+// 10 ÷ 16 × 100% = 62.5%
+// 字体使用 rem, 1rem = 10px;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: arial, "Microsoft YaHei UI", serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: $black;
+  background-color: #eef3f6 !important;
+}
+
+tr, th, td, tbody, table {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  flex: none;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 3px;
+  background: transparent;
+  outline: none !important;
+}
+
+input[type = text], input[type = password], input[type = text], input[type = email], input[type = number], input[type = url], input[type = search], input[type = date] {
+  width: 100%;
+  height: 4.5rem;
+  border: none;
+  border-bottom: solid 1px #d2d2d2;
+  font-size: 1.6rem;
+  outline: none !important;
+  background: white;
+}
+
+p {
+  text-align: justify;
+}
+
+.red-font {
+  color: $red !important;
+}
+
+.blue-font {
+  color: $blue !important;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+  background: $white;
+
+  .subTitle {
+    margin: 0;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    color: #666;
+    border-left: 3px solid $blue;
+  }
+}
+
+.back {
+  @extend .flex-row-center;
+  width: 2.2rem;
+  height: 2.2rem;
+
+  &:before {
+    content: '';
+    width: 0.9rem;
+    height: 0.9rem;
+    transform: rotate(45deg);
+    background: transparent;
+    border: 1px solid;
+    border-color: transparent transparent #fff #fff;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-center {
+  @extend .flex-row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-center {
+  @extend .flex-column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start {
+  @extend .flex-row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  @extend .flex-row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  @extend .flex-row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  @extend .flex-row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  @extend .flex-row-center;
+}
+
+.mobile-dialog {
+  width: 80vw !important;
+  left: 12vw !important;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dialog-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      margin-right: 1rem;
+      width: 7.5rem;
+      height: 2.7rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+.get-more {
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 0;
+  line-height: 3rem;
+  color: $black-lighter;
+  text-align: center;
+  background: rgba(white, .75);
+  overflow: hidden;
+}
+
+.animation {
+  animation: slide 2s;
+}
+
+@keyframes slide {
+  0% {
+    height: 0
+  }
+  33% {
+    height: 3rem
+  }
+  66% {
+    height: 3rem
+  }
+  100% {
+    height: 0
+  }
+}
+
+//loading animation start
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  margin: 17.5rem auto 0;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #67CF22;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.bottom-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  @extend .flex-row-center;
+  width: 100%;
+
+  a, .btn {
+    width: 100%;
+    height: 4rem;
+    border-radius: 0;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #fff;
+    background-color: $blue;
+    cursor: pointer;
+
+    &[disabled] {
+      background: #e0e0e0;
+      color: $black-lighter;
+    }
+  }
+
+  .green {
+    background: #61de44;
+  }
+
+  .red {
+    background: #F36570;
+  }
+
+  .btn-disabled {
+    background: #e0e0e0;
+    color: $black-light;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: scale(0.0)
+  }
+  50% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+//ellipsis
+.ellipsis {
+  max-width: 100rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.hand-write {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: #fff;
+}
+
+.no-content {
+  display: block;
+  width: 100%;
+  padding: 4rem 2rem 0;
+  line-height: 3rem;
+}
+
+.no-content-wrap, .loading-wrap {
+  box-sizing: border-box;
+  @extend .flex-column-center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 10rem;
+  min-height: 50vh;
+  background: #fff;
+
+  img {
+    flex: none;
+    width: 40%;
+  }
+
+  span {
+    padding: 2rem 0 0;
+    font-size: 1.5rem;
+    color: $black-light;
+  }
+}
+
+.top-center {
+  margin-left: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+}
+
+// loading animation end
+
+@import 'iconfont';
+
+@import 'mobile/production/product-common';
+
+@import "mobile/home";
+@import "mobile/common/header";
+@import "mobile/common/footer";
+@import "mobile/common/radios";
+@import "mobile/common/float-modal";
+@import "mobile/common/handwrite";
+@import "mobile/common/pay-modal";
+
+@import "mobile/user/user-common";
+@import "mobile/attestation/attestation-common";
+
+@import "mobile/mall/mall";
+
+@import "mobile/production/baoquan-visa";
+@import "mobile/production/credit-records";
+@import "mobile/production/electronic-certificate";
+@import "mobile/production/privatisation-deployment";
+@import "mobile/production/forensic";
+
+@import "mobile/news/news-list";
+@import "mobile/news/news";
+
+@import "mobile/order/order-list";
+@import "mobile/order/order";
+
+@import "mobile/signatures/signatures-profile";
+@import "mobile/signatures/signatures-member";
+@import "mobile/signatures/signatures-seal";
+@import "mobile/signatures/signatures-list";
+@import "mobile/signatures/signatures-info";
+@import "mobile/signatures/signatures-sign";
+
+@import "mobile/market-form-mob";

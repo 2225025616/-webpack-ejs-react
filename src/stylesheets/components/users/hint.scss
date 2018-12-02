@@ -1,0 +1,44 @@
+
+.hint {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+
+  .logo {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .hint-content {
+    text-align: center;
+
+    .tip {
+      margin: 10px 0 20px 0;
+    }
+
+    .tip-middle {
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: #025fa5;
+      margin: 4px 0;
+
+      span {
+        color: #cd1e59;
+        font-size: 2rem;
+      }
+    }
+
+    img {
+      width: 60%;
+    }
+
+    .tips {
+      color: black;
+      margin-top: 40px;
+    }
+  }
+
+}

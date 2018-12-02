@@ -1,0 +1,68 @@
+.new-package-form {
+  padding: 24px;
+  width: 100%;
+
+  article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+
+    .left-section {
+      min-width: 430px;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+
+      .package-item-name {
+        width: 100px;
+        color: #666;
+      }
+
+      //.package-item {
+      //  width: 200px !important;
+      //}
+
+      .number-tip, .unit {
+        padding-left: 24px;
+        font-size: 13px;
+        color: #666;
+      }
+    }
+
+  }
+
+  .add-package {
+    position: absolute;
+    margin-top: 20px;
+    width: 100px;
+    height: 36px;
+  }
+
+  .error-content {
+    margin: 0;
+    color: #666;
+  }
+}
+
+.org-chain-data-table {
+  border-collapse: collapse;
+
+  thead {
+    tr {
+      border-bottom: none !important;
+    }
+
+  }
+
+  tbody {
+    tr {
+      border: 1px solid #eee !important;
+
+      td {
+        border: 1px solid #eee !important;
+      }
+    }
+  }
+}

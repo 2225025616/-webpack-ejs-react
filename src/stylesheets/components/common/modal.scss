@@ -1,0 +1,84 @@
+.kyc-time {
+  position: absolute;
+  bottom: 32px;
+  left: 24px;
+  width: 60%;
+}
+
+.cancel-button {
+  button {
+    &:hover {
+      background-color: #ccc !important;
+    }
+  }
+}
+
+.delete-name {
+  color: #dd5347;
+  text-align: left;
+  line-height: 2.5em;
+}
+
+.hash-modal {
+  margin: 30px !important;
+
+  h5 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #1390fc;
+    line-height: 1.5em;
+  }
+
+  .subtitle {
+    margin-top: 15px;
+  }
+
+  p {
+    padding-bottom: 5px;
+    padding-left: 0;
+    font-size: 1.4rem;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+.user-upload-file,
+.user-recharge {
+
+  .upload-file {
+    height: 64px;
+    line-height: 64px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .remind {
+    font-size: 1.4rem;
+    border-top: 1px solid #ddd;
+
+    p {
+      text-align: left;
+      &:first-child {
+        padding-top: 8px;
+      }
+    }
+  }
+}
+
+.user-recharge {
+  margin: 16px 0;
+  text-align: center;
+
+  h2 {
+    margin: 16px 0;
+  }
+  .recharge {
+    padding: 16px 0;
+  }
+}

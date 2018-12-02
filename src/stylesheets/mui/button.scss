@@ -1,0 +1,53 @@
+@import "./color";
+@import "./mixin";
+
+@mixin btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  outline: none !important;
+  border: none !important;
+  -webkit-appearance: none;
+  &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  @include btn;
+  @include button-variant($text-inverse, $bg-blue);
+  @include button-size(px2rem(679), px2rem(98), 28px);
+  @include font-dpr(28px);
+  border-radius: px2rem(10);
+}
+
+.btn-inverse {
+  @include btn;
+  @include button-variant($text-normal, $bg-white);
+  @include button-size(px2rem(679), px2rem(98), 28px);
+  @include font-dpr(28px);
+  border-radius: px2rem(10);
+}
+
+.btn-small {
+  @include btn;
+  @include button-size(px2rem(306), px2rem(98), 28px);
+  @include font-dpr(28px);
+  border-radius: px2rem(10);
+}
+
+.btn-stress {
+  @include btn;
+  @include button-variant($text-inverse, $bg-red);
+  @include button-size(px2rem(148), px2rem(56), 28px);
+  @include font-dpr(28px);
+  border-radius: px2rem(6);
+}
+
+.btn-valid {
+  @include btn;
+  @include button-variant($text-inverse, $bg-yellow);
+  @include button-size(px2rem(161), px2rem(60), 28px);
+  @include font-dpr(28px);
+  border-radius: px2rem(6);
+}

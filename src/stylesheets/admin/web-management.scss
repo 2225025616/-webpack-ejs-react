@@ -1,0 +1,282 @@
+.web-management {
+  position: relative;
+  .choose-items {
+    display: flex;
+    margin: 30px 0 10px;
+    height: 40px;
+    border-bottom: 1px solid #d2d2d2;
+
+    .item {
+      margin-right: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      border: 1px solid #bfbfbf;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: none;
+      line-height: 40px;
+      padding: 0 22px;
+    }
+
+    .active {
+      height: 40px;
+      background-color: #fff;
+    }
+  }
+
+  .choose-content {
+    margin: 15px 0;
+
+    .passive {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .container {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .web-item {
+
+    button {
+      width: 100px;
+      margin-right: 20px;
+      position: absolute;
+      top: 3px;
+      right: 24px;
+    }
+
+    .admin-table {
+      clear: right;
+
+      .operate {
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        height: 55px;
+
+        p {
+          margin: 0;
+          padding: 0;
+          line-height: 55px;
+          color: #1890ff;
+        }
+
+        p:hover {
+          color: #1d8dfb;
+        }
+      }
+    }
+
+    .block-title {
+      width: 450px;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+  }
+
+}
+
+.admin-news-html {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.admin-table-title {
+  margin: 0 0 20px !important;
+  padding: 0 0 10px !important;
+  line-height: normal !important;
+}
+
+.add-block-chain {
+  .file-content {
+    position: relative;
+
+    button {
+      border: 1px solid #1d8dfb;
+      background-color: #fff;
+      color: #1d8dfb;
+      width: 100px;
+      line-height: 28px;
+      height: 30px;
+    }
+
+    input[type='file'] {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      width: 100px;
+      height: 30px;
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  .file-name {
+    @extend .overflow-hide;
+    margin: 0 0 0 20px;
+    line-height: 30px;
+    width: 350px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.web-table-content {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 80px 0;
+
+  section {
+    display: flex;
+    align-items: center;
+    padding-bottom:20px;
+    justify-content: center;
+
+    span {
+      width: 100px;
+      color: #666;
+    }
+
+    &:last-child{
+      padding-left: 100px;
+    }
+    div{
+      width: calc(100%-100px);
+    }
+    button {
+      width: 100px;
+    }
+    .file-content {
+      position: relative;
+
+      button {
+        border: 1px solid #1d8dfb;
+        background-color: #fff;
+        color: #1d8dfb;
+        width: 100px;
+        line-height: 28px;
+        height: 30px;
+      }
+
+      input[type='file'] {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        width: 100px;
+        height: 30px;
+        padding: 0;
+        border: 0;
+      }
+    }
+
+    .file-name {
+      margin: 0 0 0 20px;
+      line-height: 30px;
+      width: 190px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .file-tip {
+    padding: 0;
+    margin: 0 0 30px 100px;
+    font-size: 14px;
+    color: #999;
+  }
+}
+
+.add-news {
+  margin: 40px;
+
+  section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+
+    span {
+      width: 120px;
+    }
+
+    .row-input {
+      display: flex !important;
+      align-items: center !important;
+
+      .error-content {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .error-text {
+        padding-left: 10px !important;
+        color: #999;
+      }
+    }
+
+    select {
+      padding: 0 !important;
+      width: 150px;
+      height: 30px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      outline: none;
+    }
+
+    .btn-group {
+
+      button {
+        width: 100px;
+        margin-right: 40px;
+      }
+
+      .view {
+        border: 1px solid #1d8dfb;
+        background-color: #fff;
+        color: #1d8dfb;
+      }
+    }
+
+    img {
+      max-width: 300px;
+      max-height: 150px;
+      overflow: hidden;
+      margin-right: 30px;
+    }
+  }
+
+  .pic {
+    align-items: flex-start;
+
+    .upload-file {
+      position: relative;
+
+      span {
+        width: 100px;
+        height: 30px;
+        display: block;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        background-color: #1d8dfb;
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        height: 30px;
+        width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Component: Form
+ ============================================================================ */
+/*
+ * 解决 textfield区域背景色问题
+ */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 999px #f2f2f2 inset;
+}
+
+/*
+ * 将表单输入框样式一致化，重置无用的样式
+ */
+
+.form-control {
+  display: block;
+  border: none;
+  background-image: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+  }
+
+  @include placeholder(#999);
+}
+
+/*
+ * 表单输入框最后一项间距为 0
+ */
+
+.form-group.last {
+  margin-bottom: 0;
+}
+
+.form-group {
+  abbr[title] {
+    display: none;
+  }
+
+  .error {
+    color: #db4b3e;
+    font-size: 12px;
+  }
+}
+
+.sms-verify.login-container {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}

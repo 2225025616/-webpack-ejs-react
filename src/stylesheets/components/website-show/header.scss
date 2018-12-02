@@ -1,0 +1,253 @@
+.show-header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #202124 !important;
+
+    .show-header .header-right .route-sign-up {
+      color: $white !important;
+      background-color: $blue;
+      border-color: $blue;
+    }
+  }
+
+  .show-header {
+    @extend .flex-space-between;
+    width: $width;
+    margin: auto;
+
+    nav {
+      @extend .row;
+      align-items: center;
+
+      .a {
+        position: relative;
+        padding: 0 25px 0 10px;
+        font-size: 16px;
+        line-height: 80px;
+        color: $white;
+
+        &:hover {
+          color: $blue;
+        }
+
+        .submenu {
+          position: fixed;
+          top: 80px;
+          left: 0;
+          z-index: 2;
+          width: 100%;
+          height: 420px;
+          background-color: rgba(#151719, .95);
+
+          .subNav {
+            @extend .column;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 20px 0 0;
+
+            .sub-a {
+              @extend .flex-space-between;
+              width: 160px;
+              height: 50px;
+              margin: 0 0 0 10px;
+              color: $white;
+
+              .item {
+                max-width: 130px;
+                line-height: 50px;
+                font-size: 18px;
+                color: inherit;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+
+              .iconfont {
+                font-size: 18px;
+                color: inherit;
+                transform: rotate(-90deg);
+              }
+            }
+
+            .hover {
+              color: $blue;
+            }
+          }
+
+          .features, .solution-features {
+            @extend .column;
+            position: absolute;
+            left: 0;
+            top: 0;
+            max-height: 420px;
+            padding: 24px 0;
+            flex-wrap: wrap;
+
+            .feature, .solution-feature {
+              @extend .column;
+              align-items: flex-start;
+              width: 350px;
+              padding: 18px 30px;
+              margin: 0 15px 15px 0;
+              background-color: rgba($white, .05);
+
+              &:hover {
+                background-color: rgba($white, .02);
+
+                h4 {
+                  color: $blue;
+                }
+              }
+
+              h4 {
+                margin: 0 0 6px;
+                font-size: 16px;
+                color: $black-light;
+              }
+
+              p {
+                width: 100%;
+                font-size: 14px;
+                line-height: normal;
+                color: $black;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+            }
+
+            .solution-feature {
+              width: 730px;
+            }
+          }
+        }
+      }
+
+      div.a {
+        cursor: default;
+      }
+
+      .logo {
+        width: 106px;
+        height: 40px;
+        margin: 0 44px 0 0;
+        background: url("../images/logo@2x.png") no-repeat center center;
+        background-size: auto 40px;
+        cursor: pointer;
+      }
+    }
+
+    .header-right {
+      @extend .row;
+      align-items: center;
+
+      .route-a {
+        padding: 4px;
+        margin: 0 6px;
+        font-size: 14px;
+        line-height: 40px;
+        color: $white;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+
+      .size {
+        width: 80px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .login-content {
+        display: flex;
+        align-items: center;
+
+        .phone {
+          margin: 0 22px 0 11px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+
+      .route-sign-up {
+        @extend .size;
+        margin-left: 10px;
+        color: $blue;
+        background-color: $white;
+        border-color: $white;
+
+        &:hover {
+          background-color: $blue5 !important;
+          border-color: $blue5 !important;
+        }
+      }
+
+      .route-manage1 {
+        @extend .size;
+        border-color: $blue;
+        background-color: $blue;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+          color: $white;
+          background-color: $blue5;
+          border-color: $blue5;
+        }
+      }
+
+      .route-manage {
+        @extend .size;
+        margin-left: 10px;
+        border-color: rgba($white, .4);
+        color: $white;
+
+        &:hover {
+          color: $white;
+          background-color: $blue;
+          border-color: $blue;
+        }
+      }
+    }
+  }
+
+  .other-nav {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: -60px;
+    width: 100%;
+    height: 60px;
+    background-color: $white;
+
+    .nav-container {
+      width: $width;
+      height: 60px;
+      margin: auto;
+
+      .a {
+        padding: 0 10px;
+        margin: 0 20px 0 0;
+        font-size: 16px;
+        line-height: 60px;
+        color: $black-dark;
+      }
+
+      .selected {
+        color: $blue;
+      }
+    }
+  }
+}

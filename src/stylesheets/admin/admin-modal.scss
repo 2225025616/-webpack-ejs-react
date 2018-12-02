@@ -1,0 +1,126 @@
+.narcissus_17w311v {
+
+  a {
+    left: calc(100% - 50px) !important;
+    top: 2px;
+
+    circle {
+      fill: #fff;
+    }
+
+    rect {
+      fill: black
+    }
+  }
+
+  h1 {
+    padding-left: 42px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 46px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+}
+
+//确认弹窗
+.model-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    display: flex;
+    align-items: center;
+    color: #666;
+
+    .delete-item {
+      @extend .overflow-hide;
+      display: inline-block;
+      padding: 0 5px;
+      max-width: 400px;
+      color: #333;
+    }
+  }
+
+  .button-group {
+    button {
+      margin: 20px;
+      width: 100px;
+    }
+
+    .no {
+      color: #1d8dfb;
+      border: 1px solid #1d8dfb;
+      background-color: #fff;
+
+      &:hover {
+        color: #fff;
+        background-color: #1d8dfb;
+      }
+    }
+  }
+}
+//编辑弹窗
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px 20px;
+
+  section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .title {
+      margin-right: 20px;
+      min-width: 64px;
+      color: #666;
+    }
+
+    input, textarea {
+      @extend .input-active;
+    }
+
+    textarea {
+      padding: 5px 10px;
+      width: 320px;
+      height: 60px;
+      outline: none;
+    }
+  }
+
+  .disable {
+    color: #999;
+    background-color: #eee;
+  }
+
+  .disable, .blueButton {
+    margin-top: 20px;
+  }
+
+  .yes {
+
+  }
+
+  .column-input {
+    flex-direction: column;
+    margin: 6px 0;
+
+    input {
+      width: 250px;
+    }
+
+    .error-text {
+      display: none;
+      padding: 2px 0;
+      min-width: 280px !important;
+      color: #ea2c2c !important;
+      font-size: 12px;
+    }
+  }
+
+  button {
+    width: 100px;
+  }
+}

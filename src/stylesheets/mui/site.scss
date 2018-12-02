@@ -1,0 +1,164 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: $text-normal;
+  background: $bg-body;
+  font-family: "Helvetica Neue", Helvetica, Arial, 'Hiragino Sans GB', Noto Sans CJK SC, Source Han Sans CN, "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+//reset bootstrap style for member mobile
+label {
+  margin: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 0;
+}
+
+input.normal-checkbox {
+  -webkit-appearance: none;
+  width: px2rem(24);
+  height: px2rem(24);
+  border: 1px solid #999;
+  border-radius: 0;
+  background-color: #fff;
+  &:checked {
+    border: 1px solid #47ABFF;
+    background: #fff url('/mui/icon/list-selected.png') no-repeat center center;
+    background-size: 80% auto;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+//modal
+.modal-dialog {
+  height: 100%;
+  height: 100vh;
+  background-color: $bg-body;
+  margin: 0;
+  .modal-content {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: $bg-body;
+    .modal-header {
+      box-sizing: border-box;
+      height: px2rem(96);
+      line-height: px2rem(96);
+      padding-left: px2rem(36);
+      padding-right: px2rem(36);
+      color: $text-inverse;
+      background-color: $bg-blue;
+      .close {
+        @include touch-area(-50%, -100%, -50%, -150%);
+      }
+      h4 {
+        @include font-dpr(28px);
+        color: $bg-white;
+      }
+    }
+    .modal-body {
+      padding: 0;
+    }
+  }
+}
+
+main.main {
+  display: block;
+  position: relative;
+  //z-index: 3;
+  padding-top: px2rem(96);
+  background-color: $bg-body;
+  box-sizing: border-box;
+  min-height: 100%;
+  min-height: 100vh;
+  .container {
+    padding: 0;
+  }
+}
+
+.panel-mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: 11;
+  display: none;
+  @include single-transition(opacify, 0.2s, ease-in);
+}
+
+.slideout-open {
+  .panel-mask {
+    opacity: 0.5;
+    display: block;
+  }
+}
+
+.side-panel {
+  position: fixed;
+  transform: scale(0.9);
+  visibility: hidden;
+  @include single-transition(transform, 0.2s);
+}
+
+.slideout-open {
+  .side-panel {
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
+//保全清单页面
+.search-box-outer {
+  padding: px2rem(50) px2rem(36);
+  border-top: 1px solid $bd-form;
+  border-bottom: 1px solid $bd-form;
+  background-color: $bg-white;
+}
+
+.no-attestations {
+  text-align: center;
+  padding-top: px2rem(136);
+  color: $text-fade;
+  @include font-dpr(28px);
+  img {
+    height: px2rem(182);
+    margin-bottom: px2rem(24);
+  }
+  a {
+    margin: px2rem(50) auto 0;
+  }
+}
+
+.bq-list-toolbar {
+  margin-top: px2rem(24);
+  .btn-stress {
+    background-color: $bg-red !important;
+  }
+}
+
+.notary-detail-wrapper {
+  padding: px2rem(38);
+
+  h4 {
+    @include font-dpr(28px);
+    margin: px2rem(48) 0 px2rem(24);
+  }
+
+  .form-block {
+    border-left: 1px solid $bd-form;
+    border-right: 1px solid $bd-form;
+    margin-bottom: px2rem(38);
+  }
+}

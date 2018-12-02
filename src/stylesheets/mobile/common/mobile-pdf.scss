@@ -1,0 +1,128 @@
+.view-pdf-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #525659;
+  overflow: hidden;
+
+  &, * {
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    color: #999;
+  }
+
+  canvas {
+    display: block;
+  }
+
+  .row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-space-between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pdf-operator {
+    @extend .row-center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    & * {
+      pointer-events: auto;
+    }
+
+    .pdf-nav {
+      @extend .flex-space-between;
+      width: 100%;
+      height: 8rem;
+      pointer-events: none;
+
+      .prev, .next {
+        @extend .row-center;
+        width: 6rem;
+        height: 8rem;
+        border-radius: 3px;
+        background: rgba(#fff, .75);
+        color: #666;
+        cursor: pointer;
+        box-shadow: 0 0 .7rem rgba(#000, .15);
+      }
+
+      .turnTo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @extend .row-center;
+        width: 14rem;
+        margin: 0 0 0 -7rem;
+        padding: 1rem;
+        border-radius: 0 0 .3rem .3rem;
+        color: #666;
+        background: rgba(#fff, .75);
+        box-shadow: 0 .2rem .5rem rgba(#000, .15);
+
+        input {
+          width: 5rem;
+          height: 3rem;
+          padding: 0 1rem;
+          margin: 0 1rem 0 0;
+          border-radius: .2rem;
+          color: #666;
+          text-align: right;
+          background-color: transparent;
+          border: 1px solid #eee;
+        }
+
+        span {
+          padding: 0 0 0 1rem;
+          color: #666;
+        }
+      }
+    }
+
+    .btn-download {
+      @extend .row-center;
+      position: absolute;
+      right: 1rem;
+      bottom: 50%;
+      width: 5rem;
+      height: 5rem;
+      margin: 0 0 10rem;
+      border-radius: 3px;
+      color: #fff;
+      background: rgba(green, .75);
+      box-shadow: 0 0 .7rem rgba(#000, .15);
+    }
+  }
+
+  .pdf-container {
+    position: relative;
+    @extend .row-center;
+    flex: none;
+    width: 100%;
+    height: 100%;
+  }
+}

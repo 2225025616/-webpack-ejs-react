@@ -1,0 +1,177 @@
+
+.admin-kyc-form {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    section {
+      display: flex;
+
+      span {
+        color: #666;
+      }
+
+      .item {
+        margin: 0 0 0 10px;
+        color: #333;
+      }
+    }
+  }
+
+  .id-card {
+    p {
+      color: #666;
+    }
+
+    .img-groups {
+      display: inline-block;
+
+      a {
+        float: left;
+      }
+
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+      }
+
+      .back {
+        float: right;
+      }
+
+      .first-img {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .reason {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    clear: left;
+
+    p {
+      color: #666;
+    }
+
+    input {
+      margin-left: 10px;
+      width: 400px;
+    }
+  }
+}
+
+.org-kyc-form {
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+
+    section {
+      height: 50px;
+      line-height: 50px;
+      color: #666;
+
+      .item {
+        color: #333;
+      }
+    }
+  }
+
+  .img-group {
+    display: flex;
+    justify-content: center;
+
+    .licence {
+      margin-right: 150px;
+    }
+
+    section {
+      p {
+        color: #666;
+      }
+
+      img {
+        max-width: 150px;
+        max-height: 150px;
+        overflow: hidden;
+      }
+    }
+  }
+
+
+  .reason {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #666;
+    }
+
+    input {
+      margin-left: 10px;
+      width: 400px;
+    }
+  }
+}
+
+.kyc-button-group {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  button {
+    min-width: 80px;
+    margin: 0 20px;
+  }
+
+  .apply {
+
+  }
+
+  .reject {
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #999;
+  }
+}
+
+.admin-org-modal {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.org-kyc-model {
+  .title {
+    width: 80px !important;
+  }
+}
+
+.add-org, .add-admin-user, .add-notary-user {
+  margin: 10px 0 0;
+  padding: 0 10px;
+  height: 35px;
+}
+
+.search-api {
+
+  .api-title {
+    color: #666;
+  }
+
+  .api-form {
+    .form-item {
+      label {
+        width: 120px;
+        display: inline-block;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,65 @@
+.create-organization {
+
+  article {
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    h2 {
+      padding-left: 11px;
+      padding-bottom: 14px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    section {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 50px;
+
+      span {
+        width: 100px;
+        color: #666666;
+        font-size: 14px;
+      }
+
+      //input {
+      //width: 300px;
+      //height: 30px;
+      //  border-radius: 5px;
+      //  border: 1px solid #dcdcdc;
+      //  background-color: #ffffff;
+      //}
+
+      .add-org {
+
+        p {
+          margin-top: 12px;
+          color: #999;
+        }
+
+        button {
+          width: 130px;
+          height: 40px;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .save {
+          margin-top: 40px;
+        }
+
+        .btn-group {
+          display: flex;
+          margin-top: 40px;
+
+          .edit {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

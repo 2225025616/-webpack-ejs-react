@@ -1,0 +1,196 @@
+.signatures-info {
+
+  .signature {
+    @extend .flex-space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: #fff;
+
+    img {
+      width: 2.8rem;
+    }
+
+    .text {
+      @extend .flex-column;
+      width: 100%;
+      max-width: calc(100vw - 3rem - 4.3rem);
+
+      h3 {
+        @extend .flex-space-between;
+        font-size: 1.6rem;
+
+        span {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+
+      time {
+        margin: 0.8rem 0;
+        font-size: 1.3rem;
+        color: $black-lighter;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $black-light;
+      }
+    }
+  }
+
+  .sign-flow {
+    margin: 1rem 0 0;
+    padding: 1.5rem;
+    background: #fff;
+
+    .last {
+      @extend .flex-space-between;
+      align-items: flex-start;
+      color: $black-lighter;
+
+      .time {
+        @extend .flex-column;
+        align-items: flex-end;
+        width: 6.5rem;
+        padding: 0 2.5rem 0 0;
+        color: inherit;
+
+        .hour {
+          font-size: 1.6rem;
+          line-height: 2rem;
+          color: inherit;
+        }
+
+        .date {
+          font-size: 1.2rem;
+          line-height: 3.4rem;
+          color: inherit;
+        }
+      }
+
+      &:first-child .progress-detail:before {
+        top: 1rem;
+        height: calc(100% - 1rem);
+      }
+
+      &:last-child .progress-detail:before {
+        height: 1rem;
+        padding: 0;
+      }
+
+      .progress-detail {
+        position: relative;
+        @extend .flex-column;
+        flex: 1;
+        width: 100%;
+        padding: 0 0 4rem 2.5rem;
+        color: inherit;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background: $border;
+        }
+
+        .status {
+          position: relative;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2rem;
+          color: inherit;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: -3.5rem;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            background: url('../images/mobile/signature/icon-sign-flow.png') no-repeat center center;
+            background-size: 100%;
+          }
+        }
+
+        .status-draft:before {
+          background-image: url('../images/mobile/signature/icon-sign-flow-draft.png');
+        }
+
+        .status-wait-me:before {
+          background-image: url('../images/mobile/signature/icon-sign-flow-wait_me.png');
+        }
+
+        .status-wait-other:before {
+          background-image: url('../images/mobile/signature/icon-sign-flow-wait_other.png');
+        }
+
+        .status-reject:before {
+          background-image: url('../images/mobile/signature/icon-sign-flow-reject.png');
+        }
+
+        .status-cancel:before {
+          background-image: url('../images/mobile/signature/icon-sign-flow-cancel&expire.png');
+        }
+
+        .status-done:before {
+          background-image: url('../images/mobile/signature/icon-sign-flow-done.png');
+        }
+
+        .info {
+          font-size: 1.2rem;
+          line-height: 3.4rem;
+          color: inherit;
+
+          .phone {
+            padding: 0 0 0 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .code {
+    padding: 1.5rem;
+
+    .tip {
+      font-size: 1.4rem;
+    }
+
+    .input-wrap {
+      position: relative;
+
+      input {
+        box-sizing: border-box;
+        height: 4rem;
+        margin: 1rem 0 0;
+        padding: 0 1rem;
+        border: 1px solid $border;
+      }
+
+      .signature-code {
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 1.1rem;
+        color: #1687ee;
+        border: 1px solid #1687ee;
+        border-radius: 3px;
+        background: transparent;
+
+        &[disable] {
+          border-color: $border;
+          color: $black-lighter;
+        }
+      }
+    }
+  }
+
+  .do-tip {
+    padding: 3rem 2rem;
+  }
+}

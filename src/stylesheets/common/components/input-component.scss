@@ -1,0 +1,127 @@
+.input-component {
+  display: flex;
+
+  input {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size: 12px;
+    color: #aaa;
+  }
+}
+
+.column-input {
+  flex-direction: column;
+
+  input {
+    padding-left: 14px;
+    width: 100%;
+    //max-width: 340px;
+    //height: 44px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    outline-color: #1687ee;
+  }
+
+  .error-text {
+    display: none;
+    padding-top: 4px;
+    min-width: 280px !important;
+    color: #ea2c2c !important;
+    font-size: 12px;
+  }
+
+}
+
+.row-input {
+  flex-direction: row;
+  position: relative;
+
+  input {
+    //padding-left: 135px;
+    //width: 340px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    outline-color: #1687ee;
+  }
+
+  .error-content {
+    flex-direction: row;
+    position: inherit;
+    left: 30px;
+    display: none;
+    color: #ea2c2c !important;
+    //left: 370px;
+    min-width: 400px;
+
+    .font-error {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    .error-text {
+      font-size: 12px;
+      color: #ea2c2c !important;
+    }
+  }
+}
+
+.column-textarea-component {
+
+  textarea::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  textarea {
+    padding-left: 14px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    outline-color: #1687ee;
+  }
+
+  .error-text {
+    display: none;
+    padding-top: 4px;
+    min-width: 280px !important;
+    color: #ea2c2c !important;
+    font-size: 12px;
+  }
+}

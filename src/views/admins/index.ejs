@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>保全网-admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <%- stylesheet_link_tag('/bundle/common.css') %>
+  <%- stylesheet_link_tag('/bundle/admin.css') %>
+
+  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
+</head>
+<body>
+
+<div id="root"></div>
+
+<%- backend_javascript_tag("/set-cookies") %>
+<%- javascript_tag("/js/es6-shim.js") %>
+<%- javascript_tag("/js/jquery.js") %>
+<%- javascript_tag("/bundle/common.js") %>
+<%- javascript_tag("/bundle/admin.js") %>
+
+</body>
+</html>

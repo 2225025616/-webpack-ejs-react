@@ -1,0 +1,235 @@
+
+.remarks {
+  align-items: flex-start !important;
+
+  span {
+    padding-top: 7px;
+    margin-left: 20px;
+  }
+}
+
+.evidence-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.evidence-detail {
+
+  .head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid $border;
+
+    div {
+      display: flex;
+      align-items: center;
+      height: 22px;
+      border-right: 1px solid #333;
+      cursor: pointer;
+
+      i {
+        color: #0a6dee;
+        font-size: 28px;
+      }
+
+      span {
+        padding-right: 16px;
+        color: #0a6dee;
+        font-size: 16px;
+      }
+    }
+
+    h1 {
+      padding-left: 18px;
+      color: #333333;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .content {
+    display: flex;
+    padding: 33px 0;
+
+    img {
+      width: 50%;
+      height: 600px;
+    }
+
+    .evidence-info {
+      margin-left: 5%;
+      width: 40%;
+
+      section {
+        display: flex;
+        margin-bottom: 30px;
+        font-size: 14px;
+
+        .name {
+          display: block;
+          width: 120px;
+          color: #999;
+        }
+
+        p {
+          width: 350px;
+        }
+
+        .no, a {
+          color: #1d8dfb;;
+        }
+      }
+
+      .division {
+        margin-top: 40px !important;
+      }
+
+      .options {
+        display: flex;
+
+        button {
+          width: 200px;
+          height: 45px;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 5px;
+          outline: none;
+        }
+
+        .download {
+          color: #1d8dfb;
+          border: 1px solid #1d8dfb;
+          background-color: #ffffff;
+        }
+
+        .to-notary {
+          margin-left: 40px;
+          color: #ffffff;
+          background-color: #1d8dfb;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.evidences-container {
+  .table-name {
+    span:first-child{
+      color: #999;
+      font-size: 14px;
+      span.count{
+        color: #fe9e00;
+      }
+    }
+  }
+
+  .to-buy {
+    margin-left: 20px;
+    color: $normalBlue !important;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.evidence-ctn {
+
+  .evidence-introduce {
+    margin: 27px 0 15px;
+    color: #999999;
+    font-size: 14px;
+  }
+
+  .evidencesForm{
+    color: #666;
+    font-size: 14px;
+
+    section{
+      display: flex;
+      margin: 20px 0;
+      align-items: center;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span.required{
+        color: red;
+        margin-right: 10px;
+        line-height: 24px;
+        display: inline-block;
+        height: 14px;
+        font-size: 24px;
+      }
+
+      .column-input{
+        margin-left: 60px;
+        width: 400px;
+        input{
+          width: 400px;
+          height: 35px;
+        }
+      }
+
+      textarea{
+        margin-left: 60px;
+        padding: 5px 10px;
+        width: 400px;
+        height: 120px;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+      }
+
+      button.yes{
+        width: 400px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #1d8dfb;
+        border: none;
+        margin-left: 80px;
+      }
+    }
+  }
+
+  .member-list-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0 30px;
+
+    .title {
+      padding-left: 10px;
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+
+    .more {
+      color: #666;
+      font-size: 14px;
+    }
+  }
+
+  .h2 {
+    color: #333333;
+    font-size: 18px;
+  }
+
+  .hr {
+    margin: 20px 0;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #eee;
+  }
+}

@@ -1,0 +1,108 @@
+.privatisation-deployment {
+  header {
+
+    button {
+      width: 7.5rem;
+    }
+  }
+
+  .block {
+
+    article {
+      display: flex;
+      flex-direction: column;
+      border: none;
+
+      p {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $black;
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: calc(100% / 3);
+          padding: 1rem 0;
+          border-bottom: none;
+
+          .img-wrap {
+            flex: none;
+            @extend .flex-row-center;
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+            background: linear-gradient(0deg, #00ccf6 0%, #0990f2 50%, #1061fe 100%);
+
+            img {
+              width: 2.5rem;
+              margin: 0;
+              background: transparent;
+            }
+          }
+
+          .title {
+            font-size: 1.1rem;
+            color: #666;
+          }
+        }
+      }
+
+    }
+  }
+
+  .advant {
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      border: solid 1px #d2d2d2;
+      height: 6rem;
+
+      div {
+        width: 50%;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 3.2rem;
+          margin: 0 1.2rem;
+        }
+
+        span {
+          font-size: 1.3rem;
+          color: $black;
+        }
+      }
+
+      div:first-child {
+        border-right: solid 1px #d2d2d2;
+      }
+    }
+
+    section:last-child {
+      border-top: none;
+    }
+  }
+
+  .scene {
+
+    section {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 18rem;
+      }
+    }
+  }
+}

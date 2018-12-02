@@ -1,0 +1,119 @@
+.callback-form {
+
+  section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    span {
+      width: 130px;
+    }
+
+    input {
+      width: 300px;
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid #dcdcdc;
+      background-color: #fff;
+      outline: none;
+    }
+
+    .keys {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+
+      .new-key {
+        @extend .word;
+        color: #1d8dfb;
+        background-color: #fff;
+        border: none;
+      }
+    }
+
+    .submit {
+      padding: 0 30px;
+      height: 39px;
+      font-size: 18px !important;
+    }
+  }
+}
+
+//2.0的通知地址
+//.ApiKey,.callback {
+//
+//  .new-keys {
+//    display: flex;
+//    justify-content: space-between;
+//    padding: 15px 20px;
+//    border: 1px solid #ddd;
+//
+//    span {
+//      line-height: 40px;
+//    }
+//  }
+//
+//  .form-group {
+//    margin: 15px 0;
+//  }
+//
+//  .org-info {
+//    display: flex;
+//    justify-content: flex-start;
+//    width: 100%;
+//    margin-top: 15px;
+//    padding: 15px 20px;
+//    border: 1px solid #ddd;
+//
+//    .api-key {
+//      padding-left: 30px;
+//      padding-right: 130px;
+//
+//      img {
+//        width: 100px;
+//      }
+//
+//      p {
+//        text-align: center;
+//        color: inherit;
+//      }
+//    }
+//
+//    .info-key {
+//      width: 340px;
+//
+//      .access-key {
+//        color: #333;
+//        margin-bottom: 10px;
+//      }
+//    }
+//
+//
+//    p {
+//      color: #999;
+//      text-align: left;
+//    }
+//
+//    .use-time {
+//      padding: 17px 0;
+//      color:#999;
+//    }
+//  }
+//
+//  .callback-info {
+//    justify-content: center;
+//    border:none;
+//
+//    .info-key {
+//      width: 100%;
+//      max-width: 680px;
+//      word-wrap: break-word;
+//    }
+//  }
+//
+//  .rc-switch-checked {
+//    &:after {
+//      left:40px;
+//    }
+//  }
+//}

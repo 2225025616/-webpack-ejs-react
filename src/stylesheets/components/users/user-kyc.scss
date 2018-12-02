@@ -1,0 +1,179 @@
+.user-authentication {
+
+  .content {
+
+    section {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      &.showStatus{
+        height: 150px;
+        background: #f2f8ff;
+        margin-bottom: 60px;
+        padding-left: 40px;
+        align-items: center;
+        .resultImage{
+          //width: 100px;
+          //height: 100px;
+          margin-right: 20px;
+        }
+        .resultTip{
+          margin-right: 20px;
+          font-size: 16px;
+        }
+        p.resultBottom{
+          color: #666;
+          font-size: 14px;
+        }
+        a.statusButton{
+          width: 120px;
+          height: 44px;
+          border-radius: 3px;
+          color: #fff;
+          background: #3469ec;
+          text-align: center;
+          line-height: 44px;
+          font-size: 14px;
+        }
+      }
+
+
+      span {
+        width: 136px;
+        color: #666666;
+        font-size: 14px;
+      }
+
+      input {
+        margin-right: 30px;
+        padding: 0 10px;
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        background-color: #ffffff;
+        outline: none;
+      }
+    }
+
+    .id-card-img {
+      max-width: 300px;
+      max-height: 200px;
+    }
+
+    .id-card-info {
+      align-items: flex-start;
+
+      span {
+        margin-top: 8px;
+      }
+
+      .id-card-pic {
+        display: flex;
+
+        img {
+          max-width: 300px;
+          max-height: 200px;
+        }
+        .pic-box {
+          .img-box{
+            width: calc(100vw - 400px);
+            height: calc(100vh - 400px);
+            //overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .imageButton{
+            position: fixed;
+            bottom: 100px;
+            z-index: 1000000;
+            i{
+              margin: 0 20px;
+              width: 20px;
+              height: 20px;
+              color: #fff;
+              font-size: 24px;
+              cursor: pointer;
+              line-height: 20px;
+              text-align: center;
+            }
+          }
+          img {
+            //max-width: calc(100vw - 400px);
+            //max-height: calc(100vh - 400px);
+            //width: 100%;
+            //height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .upload {
+          margin-left: 40px;
+          max-width: 400px;
+
+          .upload-file {
+            position: absolute;
+            opacity: 0;
+          }
+
+          input, span {
+            margin-top: 0;
+            margin-bottom: 6px;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 28px;
+            color: #333333;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #cbcbcc;
+            background-color: #eceef2;
+            display: block;
+
+            &:hover {
+              font-weight: bold;
+            }
+          }
+
+          p {
+            margin-bottom: 10px;
+            color: #999999;
+            font-size: 12px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .notes {
+            color: #666;
+          }
+        }
+      }
+    }
+
+    .id-card-front {
+      margin-bottom: 44px;
+    }
+
+    .submit {
+      display: flex;
+      flex-direction: column;
+      margin-left: 136px;
+
+      .blueButton {
+        margin: 30px 0 16px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      p {
+        color: #999999;
+        font-size: 14px;
+      }
+    }
+  }
+}

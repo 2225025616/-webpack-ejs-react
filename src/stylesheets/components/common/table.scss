@@ -1,0 +1,283 @@
+.table-name {
+  display: flex;
+  align-items: center;
+  padding-right: 28px;
+  padding-top: 34px;
+  color: #333333;
+  font-size: 24px;
+
+  .help {
+    display: flex;
+    align-items: center;
+    color: #999999;
+
+    .font-help {
+      font-size: 19px;
+    }
+
+    span {
+      margin-left: 2px;
+      color: #999999;
+      font-size: 14px;
+    }
+  }
+
+  .balance {
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .btn {
+    width: 80px;
+    height: 24px;
+    margin: 0 0 0 10px;
+    border-radius: 2px;
+    border: 1px solid $blue;
+    font-size: 12px;
+    line-height: 22px;
+    color: $blue;
+  }
+}
+
+.member-search-bar-first {
+  margin-top: 0 !important;
+}
+
+.table-search-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 27px 0 13px;
+ /* height: 40px;*/
+
+  .table-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .DateRangePicker {
+
+    .DateRangePickerInput {
+      height: 40px;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+    }
+
+    .DateInput {
+      color: #333333;
+      font-size: 14px;
+      padding: 5px;
+      line-height: normal;
+    }
+  }
+
+  select {
+    margin: 0;
+    padding: 0 46px;
+    width: auto;
+    max-width: 180px;
+    height: 40px;
+    color: #362e2b;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    input {
+      padding-left: 10px;
+      width: 300px;
+      height: 40px;
+      border: 1px solid #e5e5e5;
+      background-color: #ffffff;
+      outline: none;
+
+      &:hover {
+        border: 1px solid #727272;
+      }
+
+      &:focus {
+        border: 1px solid #07f;
+        box-shadow: 0 0 3px #8cddff;
+      }
+    }
+
+    input::-webkit-input-placeholder { /* WebKit browsers */
+      color: #999;
+      font-size: 14px;
+    }
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #999;
+      font-size: 14px;
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #999;
+      font-size: 14px;
+    }
+    input:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: #999;
+      font-size: 14px;
+    }
+
+    i {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      color: #0a6dee;
+      font-size: 22px;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+      border-left: none;
+      background-color: #f2f2f2;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background-color: #0a6dee;
+      }
+    }
+  }
+
+  .sandbox-btn {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 114px;
+    height: 45px;
+  }
+
+  .to-notary {
+    margin-right: 30px;
+    padding: 0 20px;
+    height: 40px;
+  }
+}
+
+.table-placeholder {
+  width: 100%;
+  display: table-row;
+  height: 200px;
+  position: relative;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+
+  img {
+    max-width: 120px;
+    margin-top: 80px;
+  }
+}
+
+.member-table-first {
+  margin-top: 0 !important;
+}
+
+.common-table-list {
+  margin-top: 23px;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 14px;
+  position: relative;
+
+  thead tr,
+  tbody tr {
+    display: flex;
+    align-items: center;
+  }
+
+  thead {
+    tr {
+      text-align: left;
+      height: 40px;
+      background-color: #f2f2f2;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+
+      th {
+        padding-left: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 50px;
+      border-bottom: 1px solid #eee;
+
+      td {
+        padding-left: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .show-all {
+        overflow: visible !important;
+      }
+
+      &:hover {
+        background-color: #f0f6f6;
+      }
+    }
+  }
+
+  .operate-name {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .selected {
+    padding-left: 40px;
+  }
+
+  .operates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+
+    p {
+      @extend .word;
+      margin: 0 10px;
+      line-height: 48px;
+    }
+  }
+
+  .more-operates {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+    text-align: center;
+
+    p {
+      @extend .word;
+      line-height: 48px;
+    }
+  }
+}
+
+.division {
+  margin: 50px 0 20px;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #bfbfbf;
+}
+
+//
+//.paginate {
+//  display: block;
+//  text-align: right;
+//}

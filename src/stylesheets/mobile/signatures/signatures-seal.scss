@@ -1,0 +1,221 @@
+.signatures-seal {
+
+  .add-member {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fff;
+  }
+
+  article {
+    padding: 0.9rem 0.9rem 0;
+
+    section {
+      margin: 0 0 1rem;
+      background-color: #fff;
+      border-radius: 0.3rem;
+
+      .seal-content {
+        @extend .flex-space-between;
+        height: 10rem;
+        padding: 0 1rem;
+
+        .img-wrap {
+          @extend .flex-row-center;
+          width: 8rem;
+          height: 8rem;
+          border: 1px solid $border;
+
+          img {
+            width: initial;
+            max-width: 8rem;
+            max-height: 8rem;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+
+        .text {
+          width: calc(100vw - 14rem);
+
+          h3 {
+            @extend .ellipsis;
+            max-width: calc(100vw - 14rem);
+            font-size: 1.5rem;
+            line-height: 4rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+            line-height: 3rem;
+            color: $black-lighter;
+          }
+        }
+      }
+
+      .option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+        height: 4.5rem;
+        border-top: 0.05rem solid #d2d2d2;
+
+        p {
+          color: #666;
+          font-size: 1.4rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+        }
+
+        .default {
+          display: inline-block;
+          margin-right: 0.7rem;
+          width: 1.8rem;
+          height: 1.8rem;
+          border-radius: 0.9rem;
+          border: 0.05rem solid #999999;
+        }
+
+        .checked {
+          background: url('../images/mobile/signature/icon-choose.png') no-repeat center center;
+          background-size: 100%;
+          border: none;
+        }
+
+        .font-delete {
+          margin-right: 0.4rem;
+          font-size: 1.5rem;
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  .modal-text {
+    padding: 1.5rem;
+    line-height: 4rem;
+  }
+
+  .form {
+
+    .sub-items {
+      @extend .flex-column-center;
+      padding: 0 0 0 1.5rem;
+      background: white;
+
+      a, .item {
+        box-sizing: border-box;
+        @extend .flex-space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 1.5rem 0 0;
+        border-bottom: 1px solid $border;
+        font-size: 1.6rem;
+        line-height: 5rem;
+
+        &:last-of-type {
+          border: none;
+        }
+
+        .icon-go {
+          display: block;
+          width: 0.9rem;
+          height: 0.9rem;
+          margin: 0.9rem;
+          transform: rotate(45deg);
+          background: transparent;
+          border: 1px solid;
+          border-color: $black $black transparent transparent;
+        }
+
+        .wrap {
+          @extend .flex-row-center;
+          color: $black-lighter;
+          overflow: hidden;
+        }
+
+        input[type=text], input[type=number] {
+          margin: 0;
+          line-height: 5rem;
+          height: 5rem;
+          border: none;
+          text-align: right;
+          max-width: 70%;
+
+          &.left {
+            text-align: left;
+          }
+        }
+
+        label.img {
+          position: relative;
+          @extend .flex-row-center;
+          width: calc(100vw - 3rem - 12rem);
+          height: calc((100vw - 3rem - 12rem) * 9 / 16);
+          margin: 1rem 0 4rem;
+          border: 1px solid #eee;
+          background: #fafafa;
+
+          img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+          .add {
+            max-height: 50%;
+          }
+
+          .tip {
+            position: absolute;
+            left: 0;
+            bottom: -4rem;
+            font-size: 1.4rem;
+            line-height: 4rem;
+            color: $black-lighter;
+          }
+        }
+
+        .pay-logo {
+          display: block;
+          width: 2.2rem;
+        }
+
+        .text {
+          width: calc(100vw - 3rem - 2.2rem - 1.5rem);
+
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .tips {
+            margin: 0.4rem 0 0;
+            font-size: 1.3rem;
+            line-height: normal;
+            color: $black-lighter;
+          }
+        }
+      }
+    }
+
+    .btn {
+      display: block;
+      width: calc(100vw - 3rem);
+      height: 4rem;
+      margin: 2rem auto;
+      border: none;
+      font-size: 1.5rem;
+      color: #fff;
+      background: $blue;
+
+      &[disabled] {
+        background: #e0e0e0;
+        color: $black-lighter;
+      }
+    }
+  }
+}

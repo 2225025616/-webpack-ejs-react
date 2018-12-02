@@ -1,0 +1,37 @@
+.product-info {
+  margin: 36px 0;
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+
+    .left-bar {
+      display: block;
+      width: 130px;
+      color: #666;
+    }
+
+    input {
+      width: 280px;
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid #bfbfbf;
+    }
+
+    .product-descript {
+      margin-right: 20px;
+      width: 190px;
+      word-break: break-all;
+    }
+
+    button {
+      padding: 8px 20px;
+      line-height: 12px;
+    }
+
+    .modify {
+      margin: 0 4px 0 15px;
+    }
+  }
+}

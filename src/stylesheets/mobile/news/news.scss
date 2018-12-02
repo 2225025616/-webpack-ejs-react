@@ -1,0 +1,42 @@
+.news {
+  background: white;
+
+  article {
+    box-sizing: border-box;
+    min-height: calc(100vh - 4.2rem);
+    padding: 2rem;
+    overflow: hidden;
+
+    h1 {
+      font-size: 2.4rem;
+      color: $black;
+    }
+
+    .sub {
+      font-size: 1.3rem;
+      line-height: 4rem;
+      color: $black-lighter;
+
+      .source {
+        padding: 0 1rem;
+      }
+    }
+
+    .content {
+
+      img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        margin: 0 0 1.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        padding: 0 0 1.5rem;
+        text-align: justify;
+      }
+    }
+  }
+}

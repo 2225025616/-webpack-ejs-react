@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="has-left-sidebar">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
+  <title>保全网-区块链电子数据存证服务一站式平台</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <%- stylesheet_link_tag('/bundle/common.css') %>
+  <%- stylesheet_link_tag('/bundle/template.css') %>
+</head>
+
+<body>
+<div id="root"></div>
+<div id='__dialog_anchor'></div>
+<div id="preview" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body">
+    </div>
+  </div>
+</div>
+
+<div id="left-sidebar">
+  <header class="sidebar-header">
+    <span class="editor-title">模板编辑器</span>
+  </header>
+  <div id="schemas"></div>
+</div>
+
+<div id="workspace">
+  <div id="coverEditor" class="page cert-cover "></div>
+  <div id="contentEditor" class="page cert-content "></div>
+
+  <div class="page-actions">
+    <div id="buttons"></div>
+  </div>
+</div>
+<%- backend_javascript_tag("/set-cookies") %>
+<%- javascript_tag("/js/es6-shim.js") %>
+<%- javascript_tag("/js/jquery.js") %>
+
+<%- javascript_tag("/bundle/common.js") %>
+<%- javascript_tag("/bundle/template.js") %>
+
+</body>
+</html>

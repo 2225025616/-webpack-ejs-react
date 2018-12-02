@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Component: Carousel
+ ============================================================================ */
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  > .carousel-item {
+    position: relative;
+    display: none;
+    transition: .6s ease-in-out left;
+
+    // WebKit CSS3 transforms for supported devices
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      transition: transform .6s ease-in-out;
+      backface-visibility: hidden;
+      perspective: 1000px;
+
+      &.next,
+      &.active.right {
+        left: 0;
+        transform: translate3d(100%, 0, 0);
+      }
+      &.prev,
+      &.active.left {
+        left: 0;
+        transform: translate3d(-100%, 0, 0);
+      }
+      &.next.left,
+      &.prev.right,
+      &.active {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  > .active,
+  > .next,
+  > .prev {
+    display: block;
+  }
+
+  > .active {
+    left: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > .next {
+    left: 100%;
+  }
+  > .prev {
+    left: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    left: 0;
+  }
+
+  > .active.left {
+    left: -100%;
+  }
+  > .active.right {
+    left: 100%;
+  }
+}
+
+.carousel-indicators {
+  text-align: center;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    //margin: 1px;
+    background-color: transparent;
+    text-indent: -999px;
+    cursor: pointer;
+  }
+  .active {
+    margin: 0;
+    background-color: #999;
+  }
+}

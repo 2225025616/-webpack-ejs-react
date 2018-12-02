@@ -1,0 +1,180 @@
+.member-sidebar {
+  display: flex;
+  z-index: 2;
+
+  .paper {
+    width: 300px;
+    min-height: calc(100vh - 60px);
+    box-shadow: 3px 5px 9px 1px rgba(217, 217, 217, 0.3);
+    background-color: #ffffff;
+    border-left: 1px solid #eee;
+
+    @media screen and (min-width:1440px) and (max-width: 1600px) {
+      width: 240px;
+    }
+
+    @media screen and (max-width: 1439px) {
+      width: 220px;
+    }
+
+    .title {
+      border-bottom: 1px solid #ddd;
+      padding-left: 60px;
+      color: #666666;
+      font-size: 22px;
+      line-height: 69px;
+      display: block;
+
+      @media screen and (min-width:1440px) and (max-width: 1600px) {
+        padding-left: 50px;
+      }
+
+      @media screen and (max-width: 1439px) {
+        padding-left: 40px;
+      }
+    }
+
+    .nav-box {
+
+      ul {
+
+        li {
+          padding-left: 60px;
+          height: 60px;
+          line-height: 60px;
+          list-style:none;
+          color: #999;
+          font-size: 18px;
+
+          @media screen and (min-width:1440px) and (max-width: 1600px) {
+            padding-left: 50px;
+          }
+
+          @media screen and (max-width: 1439px) {
+            padding-left: 40px;
+          }
+
+          span{
+            &.sidebarBox{
+              width: 24px;
+              margin-right: 52px;
+              display: inline-block;
+
+              @media screen and (min-width:1440px) and (max-width: 1600px) {
+                margin-right: 32px;
+              }
+
+              @media screen and (max-width: 1439px) {
+                margin-right: 24px;
+              }
+
+            }
+          }
+        }
+
+        li:hover, .activesItem {
+          color: #010101;
+          background-color: #f9f9f9;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   NotaryUser sidebar
+ ====== ====================================================================== */
+
+.sidebar-wrapper {
+  z-index: 100;
+  position: inherit;
+  top: 72px;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  padding: 40px 8px 0;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  padding: 15px;
+
+  .control-panel {
+    @include button-size(114px, 38px, 12px, 2px);
+    @include button-variant(#fff, #DD5347, transparent);
+    margin-left: 16px;
+    margin-bottom: 10px;
+
+    .icon {
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+  }
+
+  .product-dropdown {
+    margin-left: 16px;
+    margin-bottom: 10px;
+
+    .dropdown-btn {
+      @include button-size(186px, 36px, 12px);
+      @include button-variant(#333, transparent, transparent);
+      @include text-overflow();
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+      cursor: pointer;
+
+      .caret {
+        @include clearfix();
+        float: right;
+        margin: 16px 0;
+      }
+    }
+
+    .dropdown-menu {
+      width: 186px;
+
+      li {
+        line-height: 36px;
+        padding: 0 15px;
+        a {
+          white-space: normal;
+          &:hover {
+            background-color: #eee;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .line-title {
+        text-align: left;
+        font-size: 1.2rem;
+        color: #aaa;
+      }
+    }
+  }
+
+  .menu {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+
+    li {
+      border-radius: 2px;
+      padding: 4px 0 4px 16px;
+      line-height: 40px;
+
+      &:hover,
+      &.active {
+        background-color: rgba(0, 0, 0, .03);
+      }
+
+      a {
+        color: $color-text;
+        padding-left: 24px;
+        outline: none;
+      }
+    }
+  }
+}

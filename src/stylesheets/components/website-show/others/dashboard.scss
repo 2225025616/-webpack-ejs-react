@@ -1,0 +1,138 @@
+.statistic-data {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  margin: 0 0 0 (-$width/2);
+
+  .data-item {
+    @extend .flex-space-between;
+    position: relative;
+    width: 290px;
+    height: 110px;
+    padding: 0 20px 0 25px;
+    margin-top: 30px;
+    border: 1px solid #22a6db;
+    background: linear-gradient(132deg, #1b789e, #0d212a 70%);
+
+    h1 {
+      font-size: 16px;
+      color: $white;
+    }
+
+    p {
+      font-family: arial, serif;
+      font-size: 36px;
+      font-style: italic;
+      color: #22b6f1;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      width: 30px;
+      height: 20px;
+      background: url('../images/website-show/others/pic-block-document-border-2.png') no-repeat left top;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -2px;
+      bottom: -2px;
+      width: 30px;
+      height: 20px;
+      background: url('../images/website-show/others/pic-block-document-border-1.png') no-repeat left top;
+    }
+  }
+
+  .block-height {
+    @extend .flex-column-center;
+    justify-content: flex-start;
+    height: 183px;
+    background: url('../images/website-show/others/pic-block-document-bg-1.png') no-repeat left top;
+
+    h1 {
+      margin: 10px 0 0;
+    }
+
+    p {
+      margin: 90px 0 0;
+      color: $white;
+    }
+  }
+}
+
+.new-trades {
+  @extend .flex-column-center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 84px;
+    width: $width;
+    height: 60px;
+    margin: 0 0 0 (-$width/2);
+    background: linear-gradient(to left, #0a6381 0%, #0e1114 74%, #0e1114 100%);
+  }
+
+  h1 {
+    width: $width;
+    height: 64px;
+    margin: 20px 0 0;
+    line-height: 64px;
+    font-size: 24px;
+    color: $black-dark;
+  }
+
+  table {
+    position: relative;
+    width: $width;
+    max-width: $width;
+    border-collapse: collapse;
+
+    .table-col-1 {
+      max-width: 590px;
+    }
+
+    .table-col-2 {
+      max-width: 240px;
+    }
+
+    .table-col-3 {
+      max-width: 140px;
+    }
+
+    .table-col-4 {
+      max-width: 210px;
+    }
+
+    thead tr {
+
+      th {
+        height: 60px;
+        font-size: 18px;
+        color: $white;
+        text-align: center;
+      }
+    }
+
+    td, th {
+      height: 80px;
+      padding: 0 20px;
+      font-size: 16px;
+      color: $black;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .line-gray {
+      background-color: #eee;
+    }
+  }
+}

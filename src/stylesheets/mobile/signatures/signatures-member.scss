@@ -1,0 +1,218 @@
+.signatures-member {
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cfcfcf;
+    text-align: center;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #cfcfcf;
+    text-align: center;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cfcfcf;
+    text-align: center;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cfcfcf;
+    text-align: center;
+  }
+
+  .operator {
+    position: relative;
+    z-index: 10;
+
+    .add-member {
+      font-size: 3rem;
+      font-weight: 100;
+      line-height: 4.2rem;
+      color: #fff;
+    }
+
+    .wrap {
+      position: absolute;
+      right: 0;
+      top: 4.2rem;
+      @extend .flex-column;
+      background: #373d41;
+      box-shadow: 0 -.2rem 1rem rgba(#000, .15);
+
+      a, span {
+        width: 12rem;
+        height: 4rem;
+        border-bottom: 1px solid #000;
+        font-size: 1.4rem;
+        line-height: 4rem;
+        text-align: center;
+        color: #fff;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  input {
+    margin: 0.9rem 0.7rem;
+    padding: 0 1rem;
+    width: calc(100vw - 3.4rem);
+    height: 3.1rem;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+  }
+
+  article {
+    box-sizing: border-box;
+    padding: 0 1.4rem;
+    min-height: calc(100vh - 4.2rem);
+    background-color: #fff;
+
+    section {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 7.5rem;
+      border-bottom: 1px solid #d2d2d2;
+
+      .first-name {
+        margin-right: 1.5rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 2rem;
+        background-color: #4da9ec;
+        text-align: center;
+        font-size: 1.6rem;
+        color: #fff;
+        line-height: 4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      .name {
+        margin: 0 0 .4rem;
+        color: #1b1b1b;
+      }
+
+      .phone {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #999;
+      }
+
+      .operator-wrap {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @extend .flex-row-center;
+        height: 3rem;
+        margin: -1.5rem 0 0;
+
+        .btn-edit, .btn-del {
+          box-sizing: border-box;
+          @extend .flex-row-center;
+          width: 6rem;
+          height: 2.4rem;
+          margin: 0 0 0 1rem;
+          border-radius: .2rem;
+          font-size: 1.1rem;
+        }
+
+        .btn-edit {
+          border: 1px solid $blue;
+          color: $blue;
+        }
+
+        .btn-del {
+          border: none;
+          color: #fff;
+          background: #ff5d5d;
+        }
+      }
+    }
+
+    .no-member {
+      display: block;
+      width: 100%;
+      padding: 4rem 0 0;
+      line-height: 3rem;
+      text-align: center;
+    }
+  }
+
+  .del-member {
+    padding: 0 0 0 2rem;
+    line-height: 8rem;
+  }
+}
+
+.add-signatures {
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cfcfcf;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #cfcfcf;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cfcfcf;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cfcfcf;
+  }
+
+  .add-member-info {
+    margin: 1rem 0 0;
+    padding-left: 1.5rem;
+    background-color: #fff;
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5rem;
+      border-bottom: 0.05rem solid #e8e8e8;
+
+      .item-name {
+        color: #333;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      input {
+        width: calc(100vw - 3rem - 6rem);
+        height: 5rem;
+        text-align: right;
+        padding-right: 1.5rem;
+        font-size: 1.6rem;
+        color: #666;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  .submit-member {
+    margin: 1.5rem 2.9rem;
+    width: calc(100vw - 5.8rem);
+    height: 3.7rem;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: $blue;
+    outline: none;
+  }
+
+  .btn-disabled {
+    background: #e0e0e0;
+    border: none;
+    color: $black-light;
+  }
+
+}

@@ -1,0 +1,138 @@
+.product-common {
+  header {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+    img {
+      display: block;
+    }
+
+    .button {
+      width: 9.5rem;
+      height: 2.7rem;
+      border-radius: 7px;
+      font-size: 1.2rem;
+      color: $white;
+      font-weight: bold;
+      background: $orange;
+      border: none;
+      position: absolute;
+      left: 7%;
+      bottom: 23%;
+    }
+  }
+
+  .card {
+    margin-bottom: 0;
+
+    .subTitle {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      color: $black-light;
+    }
+  }
+
+  .product {
+    padding-bottom: 0;
+
+    article {
+      border: 1px solid #d2d2d2;
+
+      .items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        height: 7rem;
+
+        aside {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1.2rem;
+          max-width: 70%;
+          //justify-content: space-between;
+          height: 100%;
+
+          .title {
+            margin: 0 1.2rem 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $black;
+          }
+
+          .sub {
+            font-size: 1.3rem;
+            color: #999;
+          }
+        }
+
+        img {
+          width: 2rem;
+          padding: 0.8rem;
+          margin-right: 1.2rem;
+          border-radius: 25%;
+          background: $blue;
+        }
+      }
+
+      .items:not(:last-child) {
+        border-bottom: 1px solid #d2d2d2;
+      }
+    }
+
+  }
+
+  .scene {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      display: block;
+      margin: 2rem 0;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-right: -1rem;
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc((100vw - 3rem - 2rem) / 3);
+        height: auto;
+        margin-right: 1rem;
+
+        .title {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+          font-weight: bold;
+          color: $blue;
+        }
+
+        .sub {
+          font-size: 1rem;
+          line-height: 1.8rem;
+          color: #666;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 1.5rem 0;
+
+    .phone-button {
+      margin-bottom: 1rem;
+    }
+
+    .tips {
+      margin: 1rem 0 2rem;
+    }
+  }
+}

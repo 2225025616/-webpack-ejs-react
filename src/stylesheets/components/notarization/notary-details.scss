@@ -1,0 +1,151 @@
+.container{
+  .title{
+    font-size: 24px;
+    color: #999;
+    span{
+      font-size: 24px;
+    }
+    span:first-child{
+      color: #010101;
+    }
+    i{
+      font-size: 24px;
+      transform: rotate(180deg);
+    }
+  }
+}
+.notary-details {
+
+  .content {
+
+    .details {
+      position: relative;
+
+      h2 {
+        color: #333333;
+        font-weight: 700;
+        padding-left: 13px;
+        font-size: 16px;
+
+        &:before {
+          content: '|';
+          position: absolute;
+          width: 3px;
+          font-size: 11px;
+          border-radius: 2px;
+          color: #0a6dee;
+          left: 2px;
+          background-color: #0a6dee;
+        }
+      }
+
+      article {
+
+        section {
+          margin-top: 28px;
+          display: flex;
+          font-size: 14px;
+
+          span {
+            color: #666;
+            width: 122px;
+            text-align: right;
+          }
+          textarea{
+            width: 300px;
+            height: 80px;
+          }
+          p, .notaryFee {
+            margin-left: 60px;
+            color: #333;
+            line-height: 22px;
+          }
+
+          .boolean {
+            font-size: 12px;
+          }
+
+          .list {
+            margin: 0 0 5px;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+
+          .row-input {
+            margin-left: 60px;
+
+            .error-content {
+              margin-left: 0;
+            }
+          }
+        }
+        .notaryFee{
+          margin-top: 58px;
+          align-items: baseline;
+          div{
+            margin: 0 0 0 60px;
+            color: #333;
+            line-height: 22px;
+            p{
+              text-align: left;
+              margin-left: 0;
+              color: #000;
+              margin-bottom: 10px;
+
+              span{
+                color: #f15537;
+                font-size: 24px;
+                font-weight: 400;
+              }
+            }
+            span{
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+
+
+    .business-details {
+      margin-top: 100px;
+      padding-bottom: 40px;
+    }
+
+    .options {
+
+      button {
+        width: 200px;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 700;
+      }
+
+      .edit {
+        margin-left: 180px;
+      }
+
+      .stop {
+        margin-left: 39px;
+      }
+    }
+
+    .notary-tip {
+      padding: 40px 0 100px 180px;
+      color: #999;
+      font-size: 14px;
+
+      span {
+        display: block;
+      }
+
+      .notary-price {
+        padding-bottom: 10px;
+      }
+    }
+
+  }
+}

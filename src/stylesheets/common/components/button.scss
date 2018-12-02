@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Component: Button
+ ============================================================================ */
+
+/*
+ * 将按钮样式一致化，重置无用的样式
+ * 1. 针对 input.btn 设置下间距为 0
+ * 2. 重置 Firefox-on-Android 默认样式，详情：https://github.com/necolas/normalize.css/issues/214
+ * 3. 元素不会成为鼠标事件的 target
+ */
+
+.btn {
+  display: inline-block;
+  padding: 0;
+  border: 1px solid transparent;
+  margin-bottom: 0; /* 1 */
+  // For input.btn
+  text-align: center;
+  vertical-align: middle;
+  background-image: none; /* 2 */
+  // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    background-image: none;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none; /* 3 */
+    background-color: #999;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #999;
+    }
+  }
+  &.btn-success {
+    padding: 6px 12px;
+  }
+}

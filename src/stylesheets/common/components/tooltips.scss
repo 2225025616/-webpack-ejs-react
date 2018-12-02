@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Component: tooltips
+ ============================================================================ */
+//.ant-tooltip{
+//  width: calc(100vw - 120px);
+//  left: 60px !important;
+//  color: #fff;
+//  padding-top: 15px;
+//
+//  .ant-tooltip-arrow{
+//    display: none;
+//  }
+//  .ant-tooltip-inner{
+//    background-color: #fff;
+//    max-width: 1800px;
+//    padding: 30px 50px 60px;
+//    color: #333;
+//    text-align: left;
+//    text-decoration: none;
+//    border-radius: 4px;
+//    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+//    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+//    /*min-height: 510px;*/
+
+    .toolTip {
+      position: relative;
+      background-color: #fff;
+      display: flex;
+      justify-items: baseline;
+
+      .arrow {
+        //display: block;
+        border-width: 8px 10px 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+        position: absolute;
+        top: -47px;
+        display: none;
+      }
+
+      .att-arrow {
+        left: 604px;
+      }
+
+      .evidence-arrow {
+        left: 395px;
+      }
+
+      i{
+        width: 111px;
+        height: 111px;
+        font-size: 70px;
+        color: #fff;
+        background-color: #0a6dee;
+        text-align: center;
+        border-radius: 20px;
+        margin-right: 30px;
+        margin-left: 3px;
+        line-height: 111px;
+      }
+      .context{
+        font-family: "Microsoft Ya Hei";
+        color: #333;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+
+        .title{
+          color: #333;
+          font-size: 32px;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+
+          span{
+            background-color: #fe9e00;
+            color: #fff;
+            font-size: 12px;
+            display: inline-block;
+            width: 70px;
+            height: 23px;
+            text-align: center;
+            margin-left: 10px;
+            line-height: 23px;
+          }
+        }
+        .tipText{
+          color: #666;
+          margin: 30px 0;
+          width: 790px;
+          line-height: 30px;
+        }
+        hr{
+          color: #eee;
+        }
+        .tipsMore{
+          font-size: 16px;
+          font-weight: 700;
+          color: #333;
+          margin: 30px 0;
+          line-height: 16px;
+        }
+
+        .att-tips-more {
+          margin: 39px 0 35px;
+        }
+
+        .evidence-tips-more {
+          margin: 26px 0 18px;
+        }
+
+        .tips{
+          margin: 30px 0 8px;
+          color: #333;
+        }
+        .tipsText{
+          color: #999;
+        }
+
+        .evidence-tips {
+          padding-bottom: 10px;
+          color: #333;
+        }
+
+        img {
+          margin-top: 47px;
+          max-width: 100%;
+        }
+      }
+    }
+//  }
+//}

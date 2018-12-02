@@ -1,0 +1,294 @@
+.user-profile {
+  padding: 30px 20px 30px 0;
+  width: calc(100vw - 200px);
+  min-height: calc(100vh - 60px);
+  background-color: #fff;
+
+  h1 {
+    margin-bottom: 29px;
+    color: #999999;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .account {
+    display: flex;
+    justify-content: space-between;
+
+    section {
+      padding: 20px 20px 50px;
+      height: 280px;
+      border-radius: 5px;
+      background-color: #f0f6f6;
+
+      h2 {
+        margin-bottom: 20px;
+        color: #8f9297;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .blueButton {
+        min-width: 100px;
+        height: 34px;
+      }
+
+      @media screen and (max-width: 1600px) {
+        .blueButton {
+          min-width: 80px;
+        }
+      }
+
+      @media screen and (max-width: 1366px) {
+        .blueButton {
+          min-width: 72px;
+        }
+      }
+
+    }
+
+    .certification {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 206px;
+
+      div {
+        padding: 16px;
+        //height: 174px;
+        border-radius: 5px;
+        background-color: #fff;
+
+        h3 {
+          padding-bottom: 12px;
+          color: #999999;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .name {
+          max-width: calc(33.4vw - 300px);
+          min-width: 130px;
+        }
+
+        p {
+          float: left;
+          margin-right: 40px;
+          color: #666666;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 34px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        @media screen and (max-width: 1366px) {
+          .name {
+            max-width: calc(33.4vw - 280px);
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .business {
+
+        .pass-org-kyc {
+          width: 90px;
+          height: 34px;
+          color: #f17c53;
+          font-size: 14px;
+          font-weight: 400;
+          border-radius: 5px;
+          background-color: #fff;
+          border:1px solid #f17c53;
+
+          &:hover {
+            box-shadow: 0 0 3px #f38d6a;
+          }
+        }
+
+        @media screen and (max-width: 1366px) {
+          .pass-org-kyc {
+            width: 70px;
+          }
+        }
+
+      }
+
+      .user {
+
+        .is-user-auth {
+          margin-right: 40px;
+        }
+
+        .pass-user-kyc {
+          width: 90px;
+          height: 34px;
+          color: #48ca96;
+          font-size: 14px;
+          font-weight: 400;
+          border-radius: 5px;
+          background-color: #fff;
+          border:1px solid #48ca96;
+
+          &:hover {
+            box-shadow: 0 0 3px #6edeb1;
+          }
+        }
+
+        @media screen and (max-width: 1366px) {
+          .pass-user-kyc {
+            width: 70px;
+          }
+        }
+      }
+    }
+
+    .org {
+      margin-right: 20px;
+      width: calc(33.4vw - 80px);
+      min-width: 310px;
+    }
+
+    .notice {
+      width: calc(33.3vw - 70px);
+      min-width: 305px;
+
+      .all {
+        padding: 0 5px;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 13px;
+        border-bottom: 1px solid #dcdcdc;
+        cursor: pointer;
+
+        .count {
+          width: 120px;
+          display: block;
+          color: #8f9297;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        @media screen and (max-width: 1366px) {
+          .count {
+            width: 60px;
+          }
+        }
+
+        .detail {
+          color: #8f9297;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .balance {
+      margin-right: 20px;
+      width: calc(33.3vw - 70px);
+      min-width: 305px;
+
+      .content {
+        padding: 0 2px;
+
+        p {
+          padding-top: 33px;
+          color: #333;
+        }
+
+        .amount {
+          font-size: 36px;
+        }
+
+        .decimal {
+          font-size: 24px;
+        }
+
+        .unit {
+          padding-left: 14px;
+          color: #666;
+          font-size: 18px;
+        }
+
+        div {
+          margin-top: 70px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .product {
+    margin-top: 27px;
+    padding: 20px 25px 30px;
+    width: calc(100vw - 220px);
+    min-width: 960px;
+    border-radius: 5px;
+    background-color: #f0f6f6;
+
+    h2 {
+      margin-bottom: 28px;
+      color: #8f9297;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .content {
+      display: flex;
+      //justify-content: space-between;  显示诚信档案的时候用
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      padding: 49px 0 55px;
+      width: calc(50vw - 165px);
+      min-width: 440px;
+      max-width: 580px;
+      height: 174px;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+
+      i {
+        margin: 0 50px;
+        color: #999;
+        font-size: 50px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 52px;
+        border-left: 1px solid #e5e5e5;
+
+        p, span {
+          color: #666;
+          font-size: 16px;
+        }
+
+        .count {
+          padding-right: 8px;
+          font-size: 24px;
+        }
+
+        .title {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

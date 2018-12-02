@@ -1,0 +1,163 @@
+.management {
+
+  //nav {
+  //  margin: 30px 0;
+  //  display: flex;
+  //  height: 45px;
+  //  border-bottom: 1px solid #d2d2d2;
+  //
+  //  span {
+  //    padding: 0 22px;
+  //    height: 45px;
+  //    color: #333333;
+  //    font-size: 16px;
+  //    line-height: 45px;
+  //    border-top-right-radius: 5px;
+  //    border-top-left-radius: 5px;
+  //    border: 1px solid #d2d2d2;
+  //    background-color: #f2f2f2;
+  //    cursor: pointer;
+  //  }
+  //
+  //  .member-management {
+  //    margin-left: 8px;
+  //  }
+  //}
+
+  .add {
+    width: 120px;
+    height: 39px;
+    font-size: 18px !important;
+  }
+
+  .deleted {
+    @extend .word;
+  }
+
+  .key {
+
+    .content-info {
+      margin-bottom: 30px;
+
+      .org-info {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #ddd;
+
+        .api-key {
+          padding-left: 30px;
+          padding-right: 130px;
+
+          img {
+            width: 100px;
+          }
+
+          p {
+            text-align: center;
+            color: inherit;
+          }
+        }
+
+        .info-key {
+          width: 340px;
+
+          .access-key {
+            color: #333;
+            margin-bottom: 10px;
+          }
+        }
+
+        p {
+          color: #999;
+          text-align: left;
+        }
+
+        .use-time {
+          padding: 17px 0;
+          color: #999;
+        }
+      }
+
+      .deleted {
+        margin-top: 106px;
+      }
+    }
+
+    .no-kyc-tip {
+      margin-bottom: 25px;
+      padding-left: 24px;
+      height: 36px;
+      color: #0a6dee;
+      font-size: 16px;
+      line-height: 36px;
+      border: 1px solid #52a8fd;
+      background-color: #daedff;
+    }
+
+    .add-key-form {
+      margin-top: 50px;
+
+      .select-group {
+        display: flex;
+        align-items: center;
+
+        .key-name {
+          margin-right: 64px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        label {
+          margin-left: 10px;
+        }
+
+        .sandbox {
+          margin-left: 38px;
+        }
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        textarea {
+          margin: 20px 0 12px;
+          width: 100%;
+          max-width: 800px;
+          height: 271px;
+          border: 1px solid #d2d2d2;
+        }
+
+        .btn-group {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          max-width: 800px;
+
+          button {
+            width: 140px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .cancel {
+            @extend .blueBorderButton;
+            margin-left: 19px;
+          }
+        }
+      }
+    }
+  }
+
+  .member {
+
+    th, td {
+      padding-left: 10%;
+    }
+  }
+
+}

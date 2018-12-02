@@ -1,0 +1,225 @@
+.signature-detail {
+  //padding-top: 28px;
+
+  .refuse-sign {
+    margin-left: 16px;
+  }
+
+  button {
+    @extend .blueButton;
+    width: 92px;
+    height: 30px;
+    border-radius: 3px !important;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  //.head {
+  //  display: flex;
+  //  align-items: center;
+  //  margin-bottom: 60px;
+  //
+  //  .back {
+  //    margin-left: 5px;
+  //    color: #0a6dee;
+  //    font-size: 16px;
+  //
+  //    &:before {
+  //      content: "<";
+  //      margin-right: 4px;
+  //      font-size: 17px;
+  //      font-weight: bold;
+  //      cursor: pointer;
+  //    }
+  //  }
+  //
+  //  h1 {
+  //    margin-left: 16px;
+  //    padding-left: 16px;
+  //    font-size: 24px;
+  //    border-left: 1px solid #333;
+  //  }
+  //}
+
+  article {
+    padding-bottom: 80px;
+
+    h2 {
+      padding-bottom: 18px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #d2d2d2;
+    }
+
+    .detail {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      hr {
+        margin-top: 5px;
+        width: 1px;
+        height: 18px;
+        background-color: #bfbfbf;
+      }
+
+      section {
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      .to {
+        padding: 0 10px;
+      }
+
+      .status {
+        display: flex;
+
+        .wait-count {
+          margin-left: 8px; //3.0改为: margin-left: 18px;
+          margin-top: 5px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          color: #fff;
+          font-size: 12px;
+          line-height: 20px;
+          text-align: center;
+          background-color: #1d8dfb;
+        }
+      }
+
+      .operate {
+        display: flex;
+
+        .download {
+          margin: 0 8px;
+        }
+      }
+    }
+
+    .contract-progress {
+
+      .last {
+        color: #999;
+
+        .progress-detail {
+
+          &:before {
+            content: '';
+            margin-left: -46.5px;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            background-color: #dcdcdc;
+          }
+        }
+      }
+
+      .finished {
+
+        .progress-detail {
+          padding-top: 0;
+          padding-left: 38.5px;
+          border-left: none;
+
+          &:before {
+            content: '';
+            position: relative;
+            display: block;
+            width: 1px;
+            height: 36px;
+            left: 8px;
+            border-left: 1px solid #dcdcdc;
+          }
+
+          &:after {
+            content: url("../images/components/finished-icon.png");
+            margin-left: -47px;
+            display: block;
+            position: relative;
+            height: 18px;
+            top: -53px;
+          }
+        }
+      }
+
+      section {
+        display: flex;
+        color: #333;
+
+        .status {
+          padding-top: 36px;
+          width: 116px;
+          font-size: 16px;
+          line-height: 18px;
+        }
+
+        .progress-detail {
+          padding: 36px 0 25px 38px;
+          font-size: 14px;
+          border-left: 1px solid #dcdcdc;
+
+          .info {
+            margin-bottom: 18px;
+            font-weight: bold;
+
+            .phone {
+              margin-left: 49px;
+            }
+          }
+
+          &:before {
+            content: url("../images/components/finished-icon.png");
+            margin-left: -47px;
+            position: absolute;
+            display: block;
+            height: 18px;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    .contract {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 36px;
+
+      .contract-detail {
+        display: flex;
+
+        img {
+          margin-right: 16px;
+          width: 40px;
+          height: 40px;
+        }
+
+        .title {
+          margin-bottom: 2px;
+          color: #333;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+
+        .time {
+          margin-left: 30px;
+        }
+      }
+
+      .to-notary {
+        margin-left: 40px;
+      }
+    }
+  }
+}

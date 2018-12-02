@@ -1,0 +1,40 @@
+.new-product {
+
+  .content {
+
+    .item {
+      display: flex;
+      align-items: center;
+      padding-bottom: 33px;
+
+      span {
+        width: 130px;
+        color: #666;
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        background-color: #fff;
+        outline: none;
+      }
+
+      select {
+        padding: 0 10px;
+        width: 160px;;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        background-color: #fff;
+      }
+    }
+
+    .submit {
+      margin: 50px 0 0 130px;
+      width: 200px;
+      height: 40px;
+    }
+  }
+}

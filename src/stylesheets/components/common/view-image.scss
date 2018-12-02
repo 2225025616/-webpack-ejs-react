@@ -1,0 +1,102 @@
+.view-image {
+
+  .view-word {
+    color: #0a6dee;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .model-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .54);
+    z-index: 300;
+
+    .icon {
+      font-size: 30px;
+      color: rgba(255, 255, 255, .70);
+      width: 56px;
+      height: 56px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      text-align: center;
+      line-height: 56px;
+      z-index: 300;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(255, 255, 255, .90);
+      }
+    }
+
+    .pic-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      flex-direction: column;
+      .img-box{
+        width: calc(100vw - 400px);
+        height: calc(100vh - 400px);
+        //overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .imageButton{
+        position: fixed;
+        bottom: 100px;
+        z-index: 1000000;
+        display: flex;
+        span{
+          margin: 0 20px;
+          width: 40px;
+          height: 40px;
+          color: #fff;
+          font-size: 24px;
+          cursor: pointer;
+          line-height: 40px;
+          text-align: center;
+          background: rgba(0,0,0,0.54);
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 0;
+        }
+        i{
+          margin: 0 20px;
+          width: 20px;
+          height: 20px;
+          color: #fff;
+          font-size: 24px;
+          cursor: pointer;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+      img {
+        //max-width: calc(100vw - 400px);
+        //max-height: calc(100vh - 400px);
+        //width: 100%;
+        //height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      //img {
+      //  max-width: 85%;
+      //  max-height: 90%;
+      //}
+    }
+  }
+}

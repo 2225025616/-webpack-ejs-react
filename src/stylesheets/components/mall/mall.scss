@@ -1,0 +1,147 @@
+.packages-wrap {
+
+  h1 {
+    //margin: 30px 0 0;
+    font-size: 18px;
+  }
+
+  .packages {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0 0;
+
+    .package {
+      width: 30%;
+      padding: 0 20px;
+      margin: 0 5% 20px 0;
+      border: 1px solid $border-light;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        box-shadow: 0 2px 5px rgba($blue, .25);
+        border: 1px solid rgba($blue, .75);
+      }
+
+      &.selected {
+        box-shadow: 0 2px 5px rgba($blue, .25);
+        border: 1px solid rgba($blue, .75);
+        background: url('../images/success.png') no-repeat top 13px right 13px;
+        background-size: 20px 20px;
+      }
+
+      h2 {
+        border-bottom: 1px solid $border-lighter;
+        font-size: 15px;
+        line-height: 46px;
+        color: #666;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        //padding: 20px 0;
+        border-bottom: 1px solid $border-lighter;
+
+        h3 {
+          margin: 0 0 10px;
+        }
+
+        p {
+          line-height: 80px;
+          text-align: center;
+
+          .red-font {
+            padding: 0 10px 0 0;
+            font-size: 30px;
+          }
+        }
+
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+          color: #666;
+          line-height: 40px;
+
+          .red-font {
+            padding: 0 10px 0 0;
+            font-size: 18px;
+          }
+        }
+
+        button {
+          width: 80px;
+          height: 26px;
+          margin: 10px 0;
+          border: 1px solid $blue;
+          border-radius: 2px;
+          color: $blue;
+          background: #fff;
+
+          &:hover {
+            background: $blue;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.buy-time-wrap {
+
+  h1 {
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+
+  .items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0 0;
+
+    .time {
+      width: 120px;
+      height: 40px;
+      margin: 0 20px 0 0;
+      border: 1px solid rgba($blue, .5);
+      text-align: center;
+      line-height: 38px;
+      cursor: pointer;
+
+      &.selected, &:hover {
+        border: 1px solid transparent;
+        background: rgba($blue, .25);
+      }
+    }
+  }
+}
+
+.footer-btn-wrap {
+  margin: 40px 0 0;
+  border-top: 1px solid $border-light;
+
+  button {
+    width: 120px;
+    height: 40px;
+    margin: 20px 0 0;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background: $blue;
+  }
+}

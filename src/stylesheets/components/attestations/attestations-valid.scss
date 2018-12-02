@@ -1,0 +1,186 @@
+@import "../common/template-theme.scss";
+
+.theme-1, .theme-2 {
+  .cert-seal {
+    background: url("../images/baoquan-stamp.jpg") no-repeat;
+  }
+}
+
+.theme-3, .theme-shibei {
+  .cert-seal {
+    background: url("../images/baoquan-stamp-3.jpg") no-repeat;
+  }
+}
+
+.attestation-result {
+  margin: 0 auto;
+  max-width: 21cm;
+}
+
+.attestation-actions {
+  position: fixed;
+  top: 170px;
+  left: 50%;
+  margin-left: 12.5cm;
+}
+
+// for sandbox ceshi image
+.attestation-test {
+  .page {
+    background: #fff url("../images/ceshi.png") center no-repeat;
+  }
+
+  .theme-1, .theme-2 {
+    background: url("../images/ceshi.png") center no-repeat, url($theme1) center 50px no-repeat !important;
+    background-color: #fff !important;
+  }
+
+  .theme-3 {
+    background: url("../images/ceshi.png") center no-repeat, url($theme3) center 50px no-repeat !important;
+  }
+
+  .theme-shibei {
+    background: url("../images/ceshi.png") center no-repeat, url($theme-shibei) center 50px no-repeat !important;
+  }
+}
+
+.attestations-valid {
+  margin-top: -70px;
+
+  .title {
+    margin-bottom: 2em;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 9px;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  .attestations-template,
+  .attestations-resource,
+  .attestations-result {
+    margin-bottom: 1em;
+
+    .caption {
+      color: #333;
+      font-size: 12px;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.attestations-template {
+  .content {
+    min-height: 150px;
+  }
+}
+
+.attestations-resource {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .item {
+      width: 32%;
+      border: 1px solid #ececec;
+
+      .resource {
+        box-sizing: border-box;
+        width: 100%;
+        height: 180px;
+        border: none;
+        color: #999;
+        background-color: #fafafa;
+        overflow: auto;
+        resize: none;
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px;
+        font-size: 12px;
+
+        .description {
+          color: #999;
+        }
+
+        .copy {
+          color: #1390fc;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.attestations-result {
+  .caption {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .hash {
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+    white-space: pre-wrap;
+    b {
+      font-weight: normal;
+      i {
+        font-style: normal;
+        color: #999;
+        display: inline-block;
+        transition: transform 0.2s ease-in;
+        -webkit-transition: transform 0.2s ease-in;
+        -moz-transition: transform 0.2s ease-in;
+        -ms-transition: transform 0.2s ease-in;
+        -o-transition: transform 0.2s ease-in;
+        &.green {
+          color: #0fa05a;
+        }
+        &.red {
+          color: #ac2925;
+          transform: scale(2);
+          -webkit-transform: scale(2);
+        }
+        &.comparing {
+          transform: scale(2);
+          -webkit-transform: scale(2);
+        }
+      }
+    }
+    em {
+      color: #1390fc;
+      margin: 0.5em;
+    }
+  }
+
+  .compare-hash {
+    button {
+      padding: 6px 10px;
+    }
+    .alert {
+      display: none;
+    }
+    .factom-site-link {
+      color: #999;
+      margin-top: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .result {
+    color: #0fa05a;
+  }
+}

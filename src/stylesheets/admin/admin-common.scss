@@ -1,0 +1,230 @@
+button {
+  height: 28px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  background-color: #1d8dfb;
+
+  &:hover {
+    background-color: #0d7be0;
+  }
+}
+
+input {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+//admin头部
+.admin-head {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  min-width: 1200px;
+  height: 60px;
+  background-color: #F4F3EF;
+
+  .admin-info {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    list-style: none;
+    line-height: 60px;
+
+    img {
+      height: 32px;
+      width: 32px;
+      vertical-align: middle;
+    }
+
+    .user-name {
+      padding: 0 20px 0 10px;
+    }
+
+    .sign-out {
+      color: #000;
+
+      &:hover {
+        color: #F1C40F;
+      }
+    }
+  }
+}
+//admin侧边栏
+.admin-tabs {
+  width: 240px;
+  padding-top: 60px;
+  background-color: #282D30;
+  z-index: 3;
+
+  .admin-logo {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+
+  li {
+    list-style: none;
+
+    img {
+      height: 15px;
+      margin: 0 20px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1D2125;
+      }
+    }
+
+    span {
+      color: #999;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: none;
+
+    li {
+      padding: 12px 0 12px 55px;
+      line-height: 30px;
+      list-style: none;
+      color: #fff;
+
+      &:hover{
+        background-color: #1D2125;
+      }
+    }
+  }
+
+  .actives {
+    ul {
+      display: block !important;
+    }
+  }
+
+  .active {
+    background-color: #1D2125 !important;
+  }
+}
+
+.DateInput__display-text{
+  border-radius: 4px;
+}
+
+select {
+  padding: 0 46px;
+  width: auto;
+  height: 35px;
+  color: #362e2b;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.admin-table-search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  height: 35px;
+
+  select {
+    margin-left: 10px;
+    margin-right: 30px;
+    padding: 0 46px;
+    width: auto;
+    height: 35px;
+    color: #362e2b;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .search-type-name {
+    margin-right: 20px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 300px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    outline: none;
+
+    &:hover{
+      border-color: #ccc;
+    }
+  }
+
+  .search {
+    margin-left: 20px;
+    width: 90px;
+    height: 35px;
+  }
+
+  .admin-sign-select {
+    margin-left: 150px;
+  }
+
+  .DateRangePicker {
+
+    .DateRangePickerInput {
+      height: 35px;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+    }
+
+    .DateInput {
+      color: #333333;
+      font-size: 14px;
+      line-height: 27px;
+      padding: 0;
+      border-radius: 4px;
+    }
+  }
+
+
+  @media (max-width: 1410px) {
+    .search-type-name {
+      margin-right: 10px;
+    }
+
+    select {
+      padding: 0 15px;
+      margin-right: 10px;
+    }
+
+    .search-input {
+      width: 200px !important;
+    }
+  }
+
+}

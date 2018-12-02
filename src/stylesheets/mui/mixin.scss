@@ -1,0 +1,160 @@
+@mixin clear-fix() {
+  & {
+    *zoom: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin placeholder-color($color) {
+  &.placeholder {
+    color: $color
+  }
+
+  &:-moz-placeholder {
+    color: $color
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color
+  }
+
+  &:-ms-input-placeholder {
+    color: $color
+  }
+}
+
+@mixin background-cover() {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin background-contain() {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin single-transition($property, $duration, $timing-function:ease-in, $delay:0s) {
+  -webkit-transition: $property $duration $timing-function $delay;
+  -moz-transition: $property $duration $timing-function $delay;
+  -o-transition: $property $duration $timing-function $delay;
+  transition: $property $duration $timing-function $delay;
+  will-change: $property;
+}
+
+//扩大触摸区域
+@mixin touch-area($top:0, $right:0, $bottom:0, $left:0, $position: relative) {
+  position: $position;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Mixins: Components/Button
+ ====== ====================================================================== */
+
+/*
+ * 设置按钮颜色
+ */
+
+@mixin button-variant($color, $background-color, $border-color:transparent) {
+  color: $color;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color;
+    background-color: darken($background-color, 2%);
+  }
+
+  &:active {
+    background-image: none;
+  }
+}
+
+/*
+ * 设置按钮大小
+ */
+
+@mixin button-size($width, $height, $font-size, $border-radius:0) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  line-height: $height;
+  text-align: center;
+}
+
+@mixin text-overflow($display: block) {
+  display: $display;
+  word-wrap: normal; /* for IE */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*
+ * 多行省略，需同时设置 max-width
+ * 仅在 webkit 下有效，其他浏览器为截断
+ * 1. $line 代表行数
+ */
+
+@mixin line-clamp($lines, $line-height: 1.3em) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines; /* 1 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: $line-height;
+  max-height: $line-height * $lines;
+}
+
+/*
+ * 渐变显示和隐藏
+ */
+@mixin fade($type) {
+
+  @if $type == 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+  } @else if $type == 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+  }
+}
+
+@mixin font-dpr($font-size) {
+  font-size: $font-size / 2;
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+@function px2rem($px, $base-font-size: 25) {
+  @return ($px / $base-font-size) * 1rem;
+}

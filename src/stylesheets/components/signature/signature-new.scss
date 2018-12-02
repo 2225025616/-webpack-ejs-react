@@ -1,0 +1,219 @@
+
+.signature-new {
+
+  .add-sign {
+    display: flex;
+    flex-direction: row;
+    //margin-top: 40px;
+    //padding-bottom: 40px;
+
+    .sign-pdf {
+      position: relative;
+
+      .seal-wrap {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 50px;
+        bottom: 10px;
+        overflow: hidden;
+
+        .signed-seal {
+          display: block;
+          position: absolute;
+          -moz-transform-origin: bottom left;
+          -webkit-transform-origin: bottom left;
+          -ms-transform-origin: bottom left;
+          -o-transform-origin: bottom left;
+          transform-origin: bottom left;
+        }
+
+        .img-wrap {
+
+          &:hover {
+            box-shadow: 0 3px 15px rgba(#0a6dee, 0.25);
+
+            .iconfont {
+              display: flex;
+            }
+          }
+
+          img {
+            display: block;
+            position: absolute;
+            -moz-transform-origin: top left;
+            -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+          }
+
+          .iconfont {
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -12px;
+            top: -12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 25%;
+            font-size: 15px;
+            color: #999;
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .sign {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      width: 300px;
+      min-height: 510px;
+      padding: 0 20px;
+      background-color: #f1f1f1;
+
+
+
+      section {
+
+        h2 {
+          padding: 0 10px;
+          font-size: 16px;
+          color: #666;
+        }
+      }
+
+      .select-seal {
+        margin-top: 30px;
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .change-seal {
+            @extend .word;
+            margin-right: 10px;
+          }
+        }
+
+        .show-seal {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 16px;
+          height: 100px;
+
+          img {
+            max-width: 280px;
+            max-height: 100px;
+          }
+
+          .please-upload {
+            color: #666;
+          }
+        }
+
+      }
+
+      .step-describe {
+        margin-top: 80px;
+
+        ul {
+          margin-top: 15px;
+          padding: 0 10px;
+          li {
+            font-size: 14px;
+            color: #333;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .post-seal {
+        text-align: center;
+
+        .post {
+          width: 140px;
+          height: 38px;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 5px;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+
+.signature-code {
+  margin-left: 30px;
+}
+
+.select-seal-model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  .seal-list {
+    display: flex;
+    //justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 16px 0 0 16px;
+    width: 580px;
+    height: 230px;
+    border: 1px solid #ddd;
+    overflow-x: scroll;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-right: 10px;
+      margin-bottom: 16px;
+      width: 170px;
+      height: 170px;
+      background-color: #f0f6f6;
+      overflow: hidden;
+      cursor: pointer;
+
+      .seal-pic {
+        width: 150px;
+        max-height: 120px;
+      }
+
+      .seal-name {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .default-seal {
+        position: absolute;
+        margin-left: 66px;
+        margin-top: -65px;
+        width: 90px;
+        color: #fff;
+        text-align: center;
+        transform: rotate(38deg);
+        background-color: #1d8dfb;
+      }
+
+    }
+  }
+
+}

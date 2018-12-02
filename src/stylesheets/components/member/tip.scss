@@ -1,0 +1,54 @@
+.certify-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 230px);
+
+  .flexCtn{
+    display: flex;
+
+    div{
+      margin-left: 60px;
+
+      p{
+        line-height: 36px;
+      }
+      .noCertify{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        .set-key{
+          display: inline-block;
+          width: 105px;
+          height: 30px;
+          background-color: #1d8dfb;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        .help {
+          display: flex;
+          align-items: center;
+          margin: 0 22px 0 4px;
+
+          i {
+            color: #aaa;
+          }
+
+          span {
+            color: #666;
+          }
+        }
+      }
+
+      .phone {
+        font-size: 18px;
+        color: #f15537;
+      }
+    }
+  }
+}

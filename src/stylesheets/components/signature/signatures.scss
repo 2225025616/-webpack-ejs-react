@@ -1,0 +1,31 @@
+.signatures {
+
+  .common-table-list {
+
+    .sign-user {
+      margin-right: 8px;
+    }
+
+    .sign-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    @media screen and (max-width: 1400px) {
+
+      .operates {
+        p {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+.signature-authorize {
+  .authorize-cancel {
+    color: #999;
+    line-height: 48px;
+  }
+}

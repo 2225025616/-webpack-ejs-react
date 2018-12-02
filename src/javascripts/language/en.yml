@@ -1,0 +1,974 @@
+validate:
+ postcode: Please enter correct *{field}*
+ phone-number: Please enter correct *{field}*
+ not-empty: Please enter *{field}*
+ credit-card: Please enter correct *{field}*
+ verify-code: Please enter correct *{field}*
+ password: Please enter correct *{field}*
+ id-card: Please enter correct *{field}*
+ real-name: Please enter correct *{field}*
+ email: Please enter correct *{field}*
+ post-money: Please enter correct *{field}*
+ url: Please enter correct *{field}*
+ packageName: Please enter correct *{field}*
+ imageCode: 请输入四位*{field}*
+
+rpc:
+ failure: System failure
+ autologin: Auto Logining...
+ query: Query
+ quering: Quering ...
+ download: Download
+
+attestation:
+ my-service: Self-service
+ never-upload: Never upload
+ block-chain-check: Checked by block chain
+ download: Download
+ input-no: Please enter Attestation No
+ info: Attestation Information
+ all: All
+ person:  Personal
+ organization:  Organization
+ enterprise: Enterprise
+ week:  Last 7 days
+ month: Last month
+ notary: Issue a Certificate
+ details:  View Detail
+ person-user: Personal
+ organization-user: Organization
+ unknown: Unknown
+
+ block-chain-verify: Blockchain Verification
+ wait-create-hash: Please wait the electronic fingerprint creation on the blockchain
+ wait-for-return: Please wait the returned attestation data
+ data-loading: Data is under loadi...
+ block-chain-hash: Blockchain Hash
+ bq-hash: BaoQuan Hash
+ right-result: Consistent Result! There is no data tempering.
+ wrong-result: Inconsistent Result! Your data has been tempered with others.
+ principle: View Principle
+ hash-title: The attestation principle of BAOQUAN
+ hash-sub-title: BAOQUAN using the blockchain tech for data attestation, solidifying e-data onto the cloud server, therefore, data modification can not be allowed. Our attestation method are as follows
+ create-sha256: We calculate the electronic fingerprint by SHA 256 algorithm for your electronic files.
+ save-file-hash: We also store the file fingerprint on the Blockchain.
+ remarks: Note
+ sha256: Under the unknown content mode, SHA256 is the algorithm for ensuring that the electronic data hasn’t been tempered with. Never before in history has the issue of hash conflict： two different files produced the same electronic fingerprint. Any content modification even just for a punctuation will cause great changes for the electronic fingerprint.
+ how-to-verify: How to verify the attestation is unmodified by anyone
+ download-pdf: Download the PDF file first, then use the SHA256 file computing tool to calculate the SHA256  value.
+ on: Inquiry the file fingerprint on the
+ block-chain: blockchain
+ search-file-hash: .
+ search: Please enter attestation ID or file name to query...
+ no: ID
+ att-no: Attestation ID
+ to-attestation: Attest Now
+ attestation-ing: Processing...
+ upload: Upload Data
+ price: File Attestation Fee： 2 Yuan per time
+ tip: Only one file is allowed(Within 10M, not support for package).
+ type: No limit for file format.
+ recent: Recent
+ my-att-tip: Attested data display is according to the current account phone number and ID card.
+ my-new-tip: 根据您的手机号、身份证匹配到和您相关的以下平台保全数据
+ original-baoquan-tip: 自行上传原创内容保全，由保全网为您进行区块链数据固定。保全网不对您上传内容的真实性作验证.
+ notary-tip: Issuing the judicial expertise certificate for the attested data, provided by Eqianxin.com and Chain Forensic Science.
+ notary-time: It will take about 7 working days when the application submitted.
+ file-attestation: File Attestation
+ file-attestation-descript: Self uploading, Baoquan.com would fix the e-data on Blockchain.
+ file-attestation-tip: Baoquan.com does not verify the authenticity of your uploaded content.
+ org-att-tip: For enterprises, Baoquan.com can embed the e-data attestation product to your business process.
+ org-api-access: Please access to API.
+ baoquan-chain: Baoquan-chain is a Blockchain-based platform for e-data attestation, developed on Fabric, as well as combined with judicial expertise centre and arbitration authority.
+ brqp: Blockchain-Registry-Open-Platform (BROP) is an open and trusted platform for intellectual property registration, developed by ZhongChao Blockchain research institute.
+ factom: Factom uses blockchain technology to revolutionize the way for data recordkeeping, especially for commercial society and government.
+ fileHash: Attestation HASH
+
+product:
+ summary:  Product Overview
+ add: Add Product
+ url: Product Address
+ no-url: None
+ status: Current Status
+ pro-status: Product Status
+ web-url: Website Address
+ sandbox: View Sandbox
+ close-sandbox: Close
+ attestation: Attestation Item
+ data:  Attestation data
+ process:  Access Process
+ online:  Launched
+ offline: Not Launched
+ to-online: On
+ to-offline: Off
+ list: Attestation Data Items
+ strip: items
+ today: today
+ yesterday:  yesterday
+ data-volume: Data Usage
+ entry: Items
+ volume: Usage
+ name: Product name
+ type: Download Type
+ input-name: Please enter your product name
+ input-website: Please enter your URL about product
+ logo: Choose Product Logo
+ choose-logo: Please choose a logo image(png/jpg(100*100)
+ my-products: Products In Service
+ org-products: Enterprise Product
+ org-products-tip: Product means a website or platform has the requirements for data recordkeeping. You can create a independent product for each website.
+ all: All Product
+ on-chain: Number of chains
+
+common:
+  buy: Buy
+  buy-now: Buy
+  loading: Loading...
+  no-member: Have no member
+  other-amount: Other amount
+  password:  Password
+  old-password: Password(6-18)
+  new-password: Password(6-18)
+  email: Email
+  real-name: Real Name
+  id-number: ID Card No
+  phone-number: Phone Number
+  verify-code: Verification Code
+  send-sms:  Send code
+  reset-sms:  s resend later
+  input-verify-code:  Received verification code
+  no-empty: Not Null
+  id-card: ID Card No
+  source: Resource Platform
+  no-info: Have no relevant attestation information
+  no-sign-auth-info: Have no authorization signing information
+  preservation: Attestation of
+  my-preservation:  Original Attestation
+  no-page:  Page is not found
+  recharge: Top up
+  pay-for: Pay
+  new: Create
+  delete: Delete
+  add-member: Add Member
+  product: Product
+  test: Sandbox
+  edit: Edit
+  apply-cert: Apply for Authentication
+  back: back
+  next: next
+  prev: Back
+  submit: Submit
+  input-member-no: Enter the invited member’s phone number
+  input-member-name: Enter the invited member’s name
+  delete-member: Remove Member
+  input-delete-member: Please enter phone number
+  input-key-id: Please enter public key No again
+  delete-key: Delete Public Key
+  delete-product: Delete Product
+  input-product: Please enter product name to delete again
+  select-modal: Choose Template
+  delete-modal: Delete Template
+  confirm-delete-modal: Are you sure to delete?
+  input-modal: Please enter template name to delete again
+  change-phone: Change Phone Number
+  input-sms: Enter the verification code
+  input-new-phone: Enter the new phone number
+  change-mail: modify email
+  input-new-mail: input new email
+  bind-mail: Verify Email Address
+  input-mail: Enter Email address
+  kyc: Identity Authentication
+  kyc-time: It may take 1-2 working days for manual reviewing
+  input-real-name: Please enter your real name
+  input-id-card: Please enter your ID Card No.
+  change-password: Change Password
+  input-old-password: Please enter the old password
+  input-new-password: Please enter the new password
+  update-org: Update Enterprise
+  updating-org: Enterprise is updating
+  create-org: Create Enterprise
+  creating-org: Enterprise is creating
+  update-address: Update address
+  updating-address: Address is updating...
+  create-address: Create address
+  creating-address: Address is creating...
+  invite: Add
+  inviting: Add...
+  save: Save
+  saving: Saving...
+  att-loading: Search...
+  att-label: Search
+  notary-stop: Delete
+  notary-loading: Loading...
+  login: Sign in
+  logining: Sign in...
+  sign-up: Sign up
+  signing-up: Signing up
+  modify-password: Modify Password
+  modifing-password: Password is modifying
+  cancel: Cancel
+  authentication: Real Name Authentication
+  no-authentication: Authenticate Not Now
+  bind: Verify
+  binding: Verify...
+  modify: Change
+  modifing: Change...
+  certify: Certification
+  certifing: Certification...
+  create-product: Create product
+  creating-product: Create product...
+  update-product: Update product
+  updating-product: Update product...
+  rmb: yuan
+  balance: Balance
+  account-balance: Balance
+  upload-file: Upload & Attest
+  file-name: File Name
+  upload: Start Upload
+  uploading: Uploading...
+  pay: For Recharge
+  to-pay: For Recharge
+  volume: Usage
+  reject-reason: Rejected Reason
+  build: build
+  rebuild: Re-generate
+  details: Details
+  download: Download
+  attestations: E-data Attestation
+  evidence: Web-evidence
+  signature: E-contract Signing
+  portion: ''
+  filter-start: Start Time
+  filter-end: End Time
+  member-phone: Member Phone
+  manager-name: Admin Name
+  contact: Phone Number
+  default: Default
+  user-notary: Enterprise
+  org-notary: Issuance
+  to-evidence: Experience Now
+  superiority: Superiority
+  process: Process
+  access: Access Now
+  help: Help
+  attestation: Attestation
+
+head:
+  no-message:  No Message
+  read-all: View all of notification message
+  login-out: Sign Out
+  account: Account Information
+  setting: Account Settings
+  help: Help
+
+setting:
+  account: Account
+  old-pwd: Old password
+  new-pwd: New password
+  bind-account: Bind Account
+  bind-phone: Bind Phone
+  no-bind-email: Not bind to email yet
+  notification: Notice Settings
+  system: Notifications
+  sign: E-sig Notice
+  attestation: ETC Notice
+  sms: SMS Alerts
+  email: Email Alerts
+
+sidebar:
+  change-face: Change Portrait
+  no-name: You have not completed the email real name yet
+  finish-name: You have completed the real name authentication
+  no-email: You have not completed the email verification yet
+  finish-email: You have completed the email confirmation
+  no-phone: You have not completed the phone yet
+  finish-phone: You have completed the phone verification
+  welcome: Welcome to BaoQuan.com!
+  user-attestation: Personal Infomation
+  setting: Account Setting
+  my-attestation: My Attestation
+  my-notary: My Certificate
+  add-new-org: Apply for Platform Access
+  org-info: Organization Information
+  org-iden: Organization Validation
+  org-key: Key Management
+  org-callback: Notary Address
+  org-member: Member Management
+  add-new-pro: New Product
+  pro-all: View All
+  pro-attestation: Attestation of product
+  pro-attestation-list: List of Attestation
+  pro-notary: Notarisation of product
+  pro-template: Template of product
+  my-message: My Messages
+  all-message: All Messages
+  user-center: User Center
+  profile: My Account
+  orders: Manage Orders
+  products: My Products
+  attestation-manage: Manage Attestation
+  new-signature: Create Contract
+  signatures: Manage Contract
+  linkmans: Manage Contacts
+  seals: Manage Seal
+  org-sign-api: Enterprise API signature
+  attestation: Trustworthy Electronic Certificate
+  org-attestation: Organization Attestation
+
+notification:
+  message-reminding: Notifications
+  notification-system: Notification System
+  financial-message: Financial Message
+  delete: Delete
+  all: All
+  product-message: Product Messages
+  other: Other
+  read: Read
+  all-read: All marked as read
+  content: Detail
+  time: Time
+  type: Type
+  subtype: Sub-type
+  sign: Signature
+  user-att: Self-attestation
+  user-sign: Baoquan Sig
+  user-key-pass: Personal-verified
+  user-key-reject: Personal-verify Refused
+  org-key-pass: Enterprise-verified
+  org-key-reject: Enterprise-verify Refused
+
+organizarion:
+  org-new: New Organization
+  org-info: Organization Information
+  basic-info: Main Information
+  org-name: Organization Name
+  org-type: Organization Type
+  org-business: Business Duration
+  org-company: Enterprise Scale
+  business-info: Business Information
+  primary-business: Core Business
+  org-web: Enterprise URL
+  contact-info: Contact Information
+  org-address: Enterprise Add.
+  contact-name: Contact Person
+  contact-no: Contact Tel
+
+member:
+  name: Name
+  phone-number: Phone number
+  done: Operation(Delete）
+
+user:
+  sign-up-new: Create Your Account
+  pwd-type: Password Combination(letters and numbers )
+  correct-phone: Valid phone number
+  pic-verify-code: Characters
+  enter-pic-verify-code: Please enter characters
+  verify-code: Phone Code
+  set-pwd: Password
+  set-new-pwd: Password
+  check-new-pwd: Password
+  not-equal: Do not equal
+  enter-verify-code: Please enter phone code
+  have-account: Already have an account
+  to-login: Sign in
+  welcome-login: Welcome to Sign up
+  accept-sign-up: Sign up
+  baoquan-tos: Baoquan’s Terms of Service
+  change-pwd-ok: Save Changes
+  login-in: Sign in
+  reset-pass: Reset Password
+  registe: Sign up
+  registe-success: Registered！Welcome to join Baoquan.com.
+  input-phone-num: Phone number
+  input-password: Please enter password
+  sign-up: Sign up
+  sign-in: Sign in
+  forget: Forgot password
+  accept: Please read and agreed to user agreement first
+  read: I accepted
+  tos: User Agreement
+  unauthorized: Not Verified
+  certified: Verified
+  certifing: Verifying
+  re-certify: Re-verify
+  to-certify: Go to verify
+  my-certify: Account Verify
+  org-certify: Enterprise Verify
+  user-certify: Personal Verify
+  new-org: Create Organization
+  to-do: To-Do List
+  to-read: Unread Notification
+  to-pay: Unpaid Order
+  to-do-list: Unprocessed Order
+  to-sign: Pending Contract
+  welcome: welcome
+  balance: Available Balance
+  setting: Set
+  phone-certify: Phone number
+  phone-descript: Phone number is key reference for attestation
+  replace: Change
+  modify: Change
+  binding: Verify
+  certify: Verify
+  mail-certify: Email
+  mail-descript: Email can be used to receive notifications
+  real-name: Real Name
+  real-name-descript: Protect the security of account.
+  password: Password
+  last-sign-in: Last Login Time
+  upload-file: Upload Files
+  hint: Hints
+  remind: Warm Tips
+  fee: Fee of file attestation：￥2 per time
+  file-size: Only one file could be allowed to be uploaded each time(File size should be no more than 10M; Uploading form should exclude the folder upload)
+  need-pay: Needing to top up first before you put it into use
+  classify: Classification
+  my-upload: My Upload
+  total: Total
+  last-item: Last Item
+  item: Items
+  need-realName: You need completed the real name authentication
+  phone-tip: Please enter Phone Number
+  pwd-tip: Please enter Password
+
+
+apikey:
+  no-key: You have no key, please click the right button to create new one
+  test: Sandbox
+  product: Product
+  org-name: Organization Name
+  cert-org: Certified by
+  validate: Validity Duration
+  never-use: Never Used
+  last-use: Last Used：
+  public-key: Public Key
+  rsa-public-key: RSA Public Key
+  new-key: No keys, please click the button to create
+  re-write: Re-enter
+  re-write-key: Please enter public key number again
+  new: Create Keys
+
+notifications:
+  address: Notify address
+  key: Keys
+  input-address: Please enter your notify address
+
+
+kyc:
+  v2: According to the organization code
+  v3: According to the uniform social credit code
+  org-name: Organization Name
+  input-org-name: Please enter your organization name
+  org-code: Organization code
+  input-org-code: Please enter your organization code
+  legal-person: Juridical Person
+  input-legal-person: Please enter your name of juridical Person
+  id-number: ID Card No
+  input-id-number: Please enter your ID card number
+  bussness-license: Business License
+  input-bussness-license: Please enter your business license
+  comp-name: Company Name
+  input-comp-name: Please enter your company name
+  social-code: Uniform Social Credit Code
+  input-social-code: Please enter your uniform social credit code
+  legal-id: Corporate ID Card
+  input-legal-id: Please enter your cooperate ID card
+  certified: Certified!
+  comp-success: Enterprise certification succeed!
+  check-comp: View the enterprise certification
+  view-comp: View the enterprise
+  application: Apply for verification
+  application-apply: Pending review
+  application-reject: Application failed, please re-apply
+  org-info: enterprise information
+  to-auth:  You can apply for enterprise verify when the enterprise creation completed.
+  org-auth-info: Enterprise Qualification
+  org-account: Public Account
+  org-account-name: Account Name
+  org-bank-name: Bank Name
+  org-bank-code: Bank Account
+  org-verify: Verify & Authorize Letter
+  wait-verify: On pending, modify is not allowed now.
+  pass-verify: Realname authentication is completed, modify is not allowed now.
+  upload: Upload
+  explain: Instruction
+  explain1: 1. Certificate should be in the validity period, if you can not upload the business licence, please upload the certificate of legal institution or the unified social credit code.
+  explain2: 2. Required Format：Original photo, scanning copy or copy with the official seal, please upload picture for JPG, JPEG or PNG, and less than 5M.
+  download: Download Letter
+  org-modify: Please modify the verify information
+  id-card-front: Front photo of ID Card
+  id-card-back: Back photo of ID Card
+  user-auth: Personal Verify Information
+  id-card-1: 1. Please upload the scanning copy or clear photo of the back side with national emblem.
+  id-card-2: 2. Photo format should be JPG/JPEG/GIF/PNG, and less than 3M.
+  id-card-tip: Note：Your detail information is not allowed in public, and would be held in strict confidence, please feel free to upload.
+
+notarization:
+ apply-notary: Apply for Notarization
+ data: Attestation Data
+ info: Business Information
+ success: Successful application
+ preserve-info: Selected Attestation Information
+ id: Attestation ID
+ time: Time
+ idenity: Identity Information
+ file: Upload File
+ notarization-info: Notarization Information
+ type: Type
+ verify: Judicial Identification
+ modal-tip: Please complete the real name authentication first before applying for the certificate
+ business: Attestation Notarization
+ check-tip: Please check the entered information is truthful and correct, so as not to cause inconvenience
+ product-info: Product Information
+ person-info: Personal Information
+ name: Name
+ organization-name: Organization Name
+ idcard: ID Card No
+ sex: Sex
+ tel: Tel
+ add: Add
+ postcode: Postcode
+ detailed-address: Detail Add.
+ business-info: Business Information
+ business-type: Business Type
+ list: Attestation Data
+ descrip: Case Description
+ property: Belong to
+ lawsuit: Judicial action or not
+ identify: Verified or not
+ entrust: Entrust others or not
+ normal:  General
+ complicate: Complex
+ hard: Hard
+ yes:  Yes
+ no:  No
+ tip-success: Successful Application!
+ tip-contact: We will contact you within 3 working days
+ tip-tel: If you ask for an urgent service, please call the following telephone number
+ my-notary-list: View to notarization
+ product-notary-list: View to product notarization
+ notary: View Notarization
+ writ-code: Please enter postcode
+ writ-add: Please enter valid address for easy mail reference
+ case-info: Brief description for your case
+ submit: Submit
+ price: Issuance Fee： 800 Yuan per time
+ tip: E-data certificate issuance service is provided by Eqianxin.com and judicial expertise
+ edit: Re-edit
+ confirm-pay: Confirm to Pay
+ amount: Notary Fee
+
+notary:
+ my-notarization: My Notarization
+ sum: Total Amount：
+ collect-code: Notary Code
+ created-at: Time
+ number: Volume
+ notary-public: Institute
+ status: Status
+ operate: Operate
+ view: View
+ open: Expand
+ item: item
+ cancel: Cancelled
+ apply: Pending
+ applying: Applying
+ accept: Issued
+ finished: Issued
+ pay: Pay
+ paid: Have Paid
+ amount: Amount(¥)
+ re-notary: Re-issue
+ cancel-notary: Cancel
+ confirm-cancel: Are you sure to cancel?
+ Judicial: Judicial Issuance
+ all-status: All Status
+ search: Please enter notary extract code to query...
+ apply-status: Apply Status
+ pay-status: Payment Status
+
+template:
+ template: All Template
+ new-template: Create Template
+ darft: Draft
+ initial: Create
+ in-review: Reviewing
+ approved: Approved
+ rejected: Rejected
+ offline: Offline
+ view: View
+ rename: Rename
+ submit: Submit
+ copy: Copy
+
+actions:
+ instrument-panel: Instrument Board
+ preservation: Attestation
+ have-apply: You have applied for the notary office
+ in-quiry: notary messages，please query the status in the notary page
+ delete-notary: Have successfully abandoned the notary
+ success-apply: You have successfully applied for the certificate
+ success-file: Issuance pending, please finish payment first
+ public-notary: Certified Successfully
+ verify-kyc: Have been verified by the real name authentication
+ create-org: You have created enterprise
+ update-org: You have successfully updated the enterprise information
+ update-kyc-org: Successfully update the real name authentication, please wait for the enterprise real name authentication by BaoQuan.com
+ remove-apikey: You have removed the key
+ add-apikey: You have added the key
+ add-member: You have add the member
+ remove-member: You have removed the member
+ destroy-product: You have removed the product
+ update-product: You have successfully updated the product information
+ update-system: You have successfully updated theA account settings
+ create-product: You have successfully created the product
+ submit-template: Have submitted the template review
+ destroy-template: Have successfully delete the template
+ update-template: Have successfully updated the template
+ create-template: Have successfully created the template
+ update-title: Have updated the template name
+ sign-up: You have successfully registered
+ reset-password: You have reset the password, please login again
+ modify-password: You have successfully updated the password
+ update-user: You have successfully updated the personal information
+ update-kyc: Successfully update the real name authentication, please wait for the real name authentication by BaoQuan staff
+ bind-phone: You have bound to a new mobile phone
+ bind-email: Please check your email later for a confirmation link to bind to the new email
+ update-avatar: You have successfully amended your portrait
+ submittemplate: Template successfully submitted, waiting for the administrator audit
+ add-address: Have successfully created the notary address
+ update-address: You have successfully updated the notary address
+ evidence-success: Successful web-evidence
+ delete-success: Successfully deleted
+ re-apply-success: Successful re-apply
+ pay-success: Successful payment
+ cancel-order-success: Successful order-canceled
+ delete-seal-success: You have deleted the seal successfully
+ add-link-success: Successful contact-added
+ remove-link-success: Successful contact-deleted
+ update-link-success: Successful contact-updated
+ delete-sign: Successfully deleted
+ delete-authorize: Successful Canceled
+
+pay:
+ recharge-channel: Top Up Channe
+ recharge-money: Top up Amount
+ to-pay: Payable  Amount
+ instant-recharge: Top Up
+ tip-price: The price for personal file attestation service： ￥2 per time
+ recharge-success: Top up successed
+ recharge-time: Top up Time
+ order-number: Id
+ bill: Bill
+ no-records: No related trade records
+ amount: Amount
+ pay-type: Payment method
+ go-pay: Go pay
+ mall: Shopping Center
+
+coupon:
+ coupon: Coupon Redemption
+ input-coupon: coupon code
+ coupon-now: Redeem Now
+ coupon-exchange: Processing
+ coupon-not-null: coupon code
+ coupon-success: Success
+
+order:
+  order-status: All Status
+  pay: Paid
+  un-pay: Not paid
+  closed: Closed
+  products: All Products
+  time: Time
+  product: Belong to
+  certificate-name: Certificate Name
+  detail: Detail
+  amount: Amount
+  status: Status
+  to-pay: Pay
+  cancel: Cancel
+  confirm-pay: Confirm to pay
+  pay-amount: Order Fee
+  yes: Confirm
+  to-cancel: Are you sure to cancel?
+  ok: Confirm
+  no-info: No relevant order information
+
+evidence:
+  url-add: Web Address
+  hole-url: A full Web address, including the prefix 'http://' or 'https://'
+  url-name: Web Name
+  search: Please enter web address or name to query...
+  no-info: No relevant web-evidence information
+  name: Name
+  url: Website
+  time: Evidence Time
+  remarks: Remark
+  attestation: Web Attestation
+  write-url: URL Please enter the related URL
+  write-name: Please enter the name
+  write-remarks: Setting other information
+  price: Web-evidence Fee： 2 Yuan per time
+  delete: Delete
+  confirm-delete: Are you sure to delete?
+  not-enough: Balance not enough!
+  evidence-tip: Please enter URL, Baoquan.com provides network forensics service as well as Blockchain-based evidence fixing.
+  limit-times: Remaining Times
+  times: time
+  start-evidence: Start
+  record: Record
+
+query:
+  query: Baoquan Blockchain query & verify
+  att-query: Verify Certificate
+  sign-query: Verify Signature
+  att-no: ID Card No/ Uniform Social Credit Code
+  att-result-yes: Successful! Match to fully consistent file information in Blockchain.
+  att-result-no: Failure! The information that matches the file cannot be queried,Please upload again.
+  sign-result-yes: Successful! It is completed by Baoquan Sig.
+  sign-result-no: Failure! It is not completed by Baoquan Sig.
+  go-on: Continue
+  file: Upload PDF
+  file-ing: Upload PDF...
+  fileAttr: Upload File
+  fileAttr-ing: Upload File...
+  view-att: Detail
+
+signature:
+ not-enough: Balance not enough for *{type}*!
+ personal-sign: Personal Sign
+ org-sign: Organization Sign
+ personal-signs: Personal Sign
+ org-signs: Organization Sign
+ can-sign: Remaining Signature
+ start-sign: Initiate a Contract
+ outside-time: Expired Date：
+ management: Contract Management
+ all-status: Contract Status
+ wait-me:  Wait for self-sign
+ wait-other: Wait for others-sign
+ finished: Completed
+ canceled: Inactivated
+ outside: Expired
+ refuse: Rejected
+ search-tip: Please enter contract title or signatory to query...
+ start-at: Create Time
+ end-at: Contract Validity
+ title: Contract Title
+ member: Signatory
+ status: Sign Status
+ detail: Detail
+ view: Preview
+ back: Back
+ all-signature: Signed Contract
+ work-management: Work Management Contract
+ info: Contract Signature Information
+ start: Contract Initiation
+ draft-start: Initiation
+ sign: Contract Sign
+ wait-sign: Wait for Sign
+ finished-sign: Completed
+ times-map: Timestamp
+ attestation: Contract Attestation
+ view-sign: Review contract
+ to: to
+ cancel: Cancel
+ cancel-sign: Cancel Contracts
+ reject-sign: Reject Contracts
+ select-date: If the contract data is not selected, never expires.
+ to-sign: Sign
+ reject: Reject
+ file-type: Please upload PDF
+ file-size: Less than 10M
+ file-pdf: Upload local PDF
+ file-drag: Move to this area
+ upload-file: Upload Local File (Within 10 M)
+ re-upload-file: Re-upload Local File (Within 10 M)
+ sign-explain: Signing Instruction
+ explain-one: 1. Complete verify
+ explain-two: 2. Upload local PDF, less than 10M
+ explain-three: 3. Set and send contract
+ explain-four: 4. Successful signature, completed
+ careful: Notice
+ careful-one: Your signature private key has been stored in Baoquan Cloud, which may not have legal validity
+ user-price: 5.Personal E-signature Fee： 5 Yuan per time
+ org-price: 6.Enterprise E-signature Fee： 40 Yuan per time
+ sign-status: Contract Status
+ finish-sign: Completed
+ setting: Set Contract
+ add-sign-member: Add Signatory
+ sign-way: Method
+ sign-name: Signatory
+ account: Account
+ launch: Initiator
+ signatory: Signatory
+ select-link: Choose
+ setting-info: Contract Setting
+ end-time: Deadline
+ select-end-time: Deadline
+ post: Send
+ my-seal: My Signature
+ change-seal: Change Signature
+ seal-progress: Signature Process
+ progress-1: 1.Select signature
+ progress-2: 2.Long press and move to the right area
+ progress-3: 3.Send it after moved
+ submit: Send
+ select-seal: Select Signature
+ add-seal: Add Signature
+ previous: Back
+ next: Next
+ add-linkman:  Add Contacts
+ edit-linkman: Edit Contacts
+ delete-linkman: Delete Contacts
+ confirm-delete-linkman: Are you sure to delete?
+ seal-remark: Seal Remark
+ add-seals: Add Seal
+ seals-png: Please upload picture for PNG
+ seals-size: Seal Size： Less than 180px*180px
+ upload-seals: Please upload seal
+ upload: Upload Seal
+ to-upload: No seal, please upload first
+ seals-name: Seal Name
+ seals-remarks: Please enter seal remark
+ seals-time: Create Time
+ set-default: Set as Default
+ delete-seals: Delete
+ seal: seal
+ default: default seal
+ no-seal: no seal
+ forever: Never Expires
+ delete-sign: Delete Contracts
+ confirm-delete-sign:  Are you sure to delete
+ sign-type: Contract Type
+ toastr-size: File size should be less than 20M
+ toastr-type: Please upload in PDF format
+ not-repeat: Re-add the signatories is not allowed
+ not-add-current: The current user can not be added as a signatory
+ authorize: Authorization Signing
+ authorize-org: Authorization Institution
+ authorize-at: Authorization Date
+ authorize-phone: Authorization Phone Number
+ authorizeing: Pending
+ authorized: Authorized
+ cancel-authorize: Cancel
+ is-cancel-authorize: Do you want to cancel the authorization by
+ authentication-tip: Please finish identity authentication first before using Baoquan Sig .
+ accounts: Account
+ count: Baoquan Statistics
+ sign-count: Total Signing
+ sign-count-time: Signing Quantity
+ sign-count-user: Signer Quantity
+ time-unit:
+ user-unit:
+ org-sign-api-info: Enterprise API signature means that enterprise can access to Baoquan API for e-signature service, and fully integrated into the current business process without jumping off their own website.
+
+home:
+ product: Our Product
+ intro: Introduction
+ learn-more: Learn More
+ application: Applicable Industry
+ product-function: Product Function
+
+ service: Our Service
+ learn-more-1: Learn More
+
+ solution: Our Solutions
+ case: Customer Case
+ learn-more-2: More
+
+ info: Our Information
+ more: More
+
+ partner: Our Cooperators
+ news: News
+ media: Media
+ blockchain: Blockchain
+
+header:
+ product: Products
+ solution: Solutions
+ news: News
+ query: Query
+ blockchain: Blockchain
+ veraxchain: Veraxchain
+ support: Support
+ about: About
+ sign-in: Sign in
+ sign-up: Sign up
+ my-account: Account
+
+footer:
+ contact: Contact Us
+ tel: Tel
+ email: Email
+ address: Address
+ hot: Hot products & solutions
+ link: Link
+ follow: Follow us
+ tip: Upcoming info
+ company: Zhejiang Shuqin Technology Co.,Ltd.
+ ICP: Zhejiang ICP for 15025396-1
+
+float-bar:
+ customer: Customer
+ business: Business
+
+marketing:
+ form: Conversations
+ name: Name (Required)
+ phone: Phone number (Required)
+ verify-code: Please enter code
+ email: Email
+ company: Company name
+ btn: Submit
+ submiting: Submit...
+ btn-fold: Consult
+ head-1: Why Use the Trustworthy Electronic Certificate
+ head-2: Product Superiority
+ head-3: Application Scene
+ head-4: Access Process
+ head-5: Our Cooperators
+
+pss:
+ access: Access Now
+ issue: Issue Now
+ contact: Online Contact
+ what: What is the *{content}*
+ why: Why use the *{content}*
+ function: Product Features
+ apply: Applicable Scene
+ services: Our service
+ more-app: For more detail *{content}*
+ access-method: Access Method
+ cases: Cases
+ flow: User Flows
+ issue-process: Issue Process
+ process: Access Process
+ judicial: Judicial Expertise Certificate
+ advantages: Superiority
+ require: Problems & Demands
+ brief: Introduction
+ superiority: Superiority
+ field: Applicable field
+
+
+help:
+ title: Help & Support
+ head: ALL
+ search: Search
+ holder: Please input the keyword
+ more: For more detail *{content}*
+ service: Online Contact
+ q: FAQ
+
+other:
+ team: Team Member
+ flow: Roadmap
+
+
+
+
+

@@ -1,0 +1,163 @@
+.notary-container {
+  padding: 30px !important;
+  min-width: 1000px !important;
+}
+
+.notary-panel {
+  height: auto !important;
+  margin-bottom: 16px;
+
+  h2 {
+    line-height: 34px;
+  }
+
+  .search-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 34px;
+    right: 104px !important;
+
+    .search-btn {
+      position: absolute;
+    }
+  }
+
+  .check {
+    float: right;
+    width: 114px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    background-color: #DD5347;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid #ccc;
+    }
+  }
+}
+
+.search-result .table tr .pic {
+  img {
+    width: 35px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.notary-content {
+  display: block;
+  margin: 0;
+  padding: 0 0 24px;
+  min-height: 500px;
+  //width: 870px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 -1px 0 #E8E8E8, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(224, 224, 224, 0.24);
+
+  .title,
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .notary-list {
+
+    .notary-paginate {
+      margin: 20px 0;
+    }
+
+    .notary-detail {
+      margin-top: 0 !important;
+      color: #1d8dfb;
+      line-height: 36px;
+      cursor: pointer;
+    }
+
+    .title {
+      background-color: white;
+    }
+
+    img {
+      max-width: 120px;
+      margin-top: 120px;
+    }
+
+    .font {
+      color: #aaa;
+      font-size: 12px;
+    }
+    .item {
+      padding: 0;
+
+      span {
+        line-height: 36px
+      }
+
+      .paid {
+        color: #f00;
+      }
+
+      p:last-child {
+        margin-top: 10px;
+      }
+
+      .btn-default {
+        margin-top: 0 !important;
+      }
+      .font-weight {
+        font-family: "Courier New";
+      }
+
+      img {
+        width: 35px;
+        margin: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unfold {
+      text-align: left;
+      background-color: #eee;
+
+      .notary-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+
+        span {
+          margin-right: 10px;
+        }
+        img {
+          width: 70px;
+          margin: 0;
+        }
+
+        .date-hash {
+          word-break: break-all;
+        }
+      }
+    }
+
+    .list-to-notary {
+      margin-top: 0 !important;
+      color: #1d8dfb;
+      line-height: 36px;
+      cursor: pointer;
+    }
+  }
+}

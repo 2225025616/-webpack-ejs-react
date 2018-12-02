@@ -1,0 +1,189 @@
+
+.table-contents {
+  margin-top: 20px;
+  font-size: 14px;
+
+  .table-list {
+    text-align: center;
+
+    .table-placeholder {
+      display: block !important;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 42px;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+      background-color: #f2f2f2;
+
+      span {
+        padding-left: 20px;
+        text-align: left;
+        color: #333 !important;
+        font-weight: 700;
+        line-height: 40px;
+        font-size: 14px;
+
+        &:first-child {
+          padding-left: 40px;
+        }
+      }
+
+      @media screen and (max-width: 1500px) {
+        span {
+          padding-left: 10px;
+
+          &:first-child {
+            padding-left: 12px;
+          }
+        }
+      }
+
+      .operates {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    .item {
+      height: 51px;
+      line-height: 50px;
+      border-bottom: 1px solid #eee;
+
+      .point {
+        display: flex;
+        justify-content: space-around;
+
+        &:hover {
+          background-color: #f0f6f6;
+        }
+
+        span {
+          padding-left: 20px;
+          text-align: left;
+
+          &:first-child {
+            padding-left: 40px;
+          }
+        }
+
+        @media screen and (max-width: 1500px) {
+          span {
+            padding-left: 10px;
+
+            &:first-child {
+              padding-left: 12px;
+            }
+          }
+        }
+
+        .operates {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            @extend .word;
+            margin: 0 10px;
+            padding-left: 0;
+            text-align: center;
+            color: #1d8dfb;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .hover {
+        background-color: #F5F5F5;
+      }
+
+      p:last-child {
+        margin-top: 10px;
+      }
+
+      .btn-default {
+        margin-top: 0 !important;
+      }
+      .font-weight {
+        font-family: "Courier New";
+      }
+
+      img {
+        width: 35px;
+        margin: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .check {
+        cursor: pointer;
+        color: #00AAF2;
+      }
+
+      //.paid {
+      //  padding-left: 10px !important;
+      //  color: #f00;
+      //}
+    }
+
+    img {
+      max-width: 120px;
+      margin-top: 80px;
+    }
+
+    .font {
+      color: #aaa;
+      font-size: 12px;
+    }
+
+    .unfold {
+      text-align: left;
+
+      .notary-data {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin-bottom: 6px;
+        flex-flow: column;
+
+        .infos {
+          width: 100%;
+          line-height: 40px;
+          font-size: 1.4rem;
+
+          .infoName {
+            width: 35%;
+            text-align: right;
+            display: inline-block;
+            margin-right: 4%;
+          }
+
+          .anoList {
+            margin-left: 24%;
+            cursor: pointer;
+            color: #00AAF2;
+            border: 1px solid #00AAF2;
+            padding: 5px 11px 4px 12px;
+          }
+
+          .anoDiv {
+            display: none;
+            margin-left: 311px;
+
+            p {
+              text-align: left;
+              line-height: 30px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

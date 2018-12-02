@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>保全网-区块链电子数据存证服务一站式平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+          content="保全网是一家区块链技术服务公司，利用区块链技术的基础设施，给企业平台提供基础方案，通过区块链对电子数据进行存储，接入司法鉴定中心和公证处，将区块链数据保全与司法紧密结合，帮助企业打造一个具有可信电子数据凭证的平台，从而增加社会公信力。">
+    <meta name="keywords"
+          content="保全网，区块链，区块链数据存证，电子数据存证,Baoquan.com,Blockchain,Blockchain data attestation,e-data attestation">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/bundle/logo.ico">
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?53278946a6694034eea7fb4f479cf9ea";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <%- stylesheet_link_tag('/bundle/common.css') %>
+    <%- stylesheet_link_tag('/bundle/app.css') %>
+</head>
+<body>
+<div id="root"><%- html_tag() %></div>
+<div id="__extends__"></div>
+
+<script>
+  window['__INITIAL_STATE__'] = <%- javascript_initial_state() %>
+</script>
+
+<%- backend_javascript_tag("/set-cookies") %>
+<%- javascript_tag("/js/es6-shim.js") %>
+<%- javascript_tag("/js/jquery.js") %>
+<%- javascript_tag("/bundle/common.js") %>
+<%- javascript_tag("/bundle/app.js") %>
+
+<!--<script src="https://webcert.cnmstl.net/cert/grade/small_h_img.js?sn=fc75337090e345169710a009a9751bb9"></script>-->
+
+</body>
+</html>

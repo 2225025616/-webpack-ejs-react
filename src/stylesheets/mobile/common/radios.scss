@@ -1,0 +1,19 @@
+.radios {
+  @extend .flex-start;
+  width: 100%;
+
+  input[type=radio] {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 0.6rem 0 1.6rem;
+
+    &:first-of-type {
+      margin: 0 0.8rem 0 0;
+    }
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
+}

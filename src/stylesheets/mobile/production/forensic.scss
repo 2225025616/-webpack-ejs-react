@@ -1,0 +1,68 @@
+.forensic {
+
+  header {
+
+    button {
+      width: 7.5rem;
+    }
+  }
+
+  .product {
+
+    article {
+      border: none;
+
+      .items {
+        justify-content: flex-start;
+        align-content: center;
+        padding: 1rem 0;
+        border-bottom: none;
+
+        .img-bg {
+          @extend .flex-row-center;
+          flex: none;
+          width: 3.9rem;
+          height: 3.9rem;
+          border-radius: 50%;
+          background: #f6f6f6;
+
+          img {
+            width: 2.25rem;
+            margin: 0;
+            background: transparent;
+          }
+        }
+
+        aside {
+          flex: 1;
+          max-width: 100%;
+          height: auto;
+          justify-content: flex-start;
+
+          .title {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .scene {
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 15rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+  }
+}
